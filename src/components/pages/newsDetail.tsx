@@ -14,13 +14,14 @@ export interface NewInfo{
   _id: string;
   title: string;
   subtitle: string;
+  duration: string;
   body: Object;
   _createdAt: string;
 }
 
 
 const NewsDetail = () => {
-  const [postDetail, setPostDetail] = useState<NewInfo>({_id: "", title: "", subtitle: "", body: "", _createdAt: ""});
+  const [postDetail, setPostDetail] = useState<NewInfo>({_id: "", title: "", duration: "", subtitle: "", body: "", _createdAt: ""});
   const [postDetailMore, setPostDetailMore] = useState<NewInfo[]>([]);
   const [loading, setLoading] = useState(false);
   const {id} = useParams();
@@ -82,7 +83,7 @@ const NewsDetail = () => {
         <div className='flex flex-col w-full items-center lg:mt-[5rem] mt-10 lg:mb-[10rem] mb-20'>
           <div className='text-white lg:text-lg text-sm gap-2 flex flex-row items-center'>
             <i className="fi fi-rr-hourglass-end mb-[-.3rem]"></i>
-            3 mins read
+            {postDetail?.duration} mins read
           </div>
           <div className={`leading-relaxed text-white playfair-font lg:text-[3rem] text-2xl my-3 font-bold text-center`}>
             {postDetail?.title}
@@ -129,7 +130,7 @@ const NewsDetail = () => {
                   </NavLink>
                   <div className='text-white lg:text-lg text-sm gap-2 flex flex-row items-center'>
                     <i className="fi fi-rr-hourglass-end mb-[-.3rem]"></i>
-                    3 mins read
+                    {post?.duration} mins read
                   </div>
                 </div>
               </div>

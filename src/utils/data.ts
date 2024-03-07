@@ -10,6 +10,7 @@ export const postDetailQuery = (postId: string) => {
     _id,
     title,
     body,
+    duration,
     _createdAt
   }`;
   return query;
@@ -21,6 +22,7 @@ export const newsDetailMoreQuery = (id: string) => {
       _id,
       title,
       subtitle,
+      duration,
       body
     }`;
     return query;
@@ -29,6 +31,7 @@ export const newsDetailMoreQuery = (id: string) => {
       _id,
       title,
       subtitle,
+      duration,
       body
     }`;
     return query;
@@ -40,6 +43,7 @@ export const announcementQuery = () => {
     _id,
     title,
     subtitle,
+    duration,
     mainImageUrl,
     body
   }`;
@@ -55,6 +59,7 @@ export const newsQuery = ({page, pageSize}: searchParams) => {
     _id,
     title,
     subtitle,
+    duration,
     body
   }`;
   
@@ -68,6 +73,7 @@ export const newSearchQuery = ({page, pageSize, searchTerm}: searchParams) => {
     _id,
     title,
     subtitle,
+    duration,
     body
   }`;
 

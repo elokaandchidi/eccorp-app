@@ -10,6 +10,7 @@ export interface NewInfo{
   _id: string;
   title: string;
   subtitle: string;
+  duration: string;
   body: string;
 }
 
@@ -110,7 +111,7 @@ const News = () => {
                 </NavLink>
                 <div className='text-white lg:text-lg text-sm gap-2 flex flex-row items-center'>
                   <i className="fi fi-rr-hourglass-end mb-[-.3rem]"></i>
-                  3 mins read
+                  {post?.duration} mins read
                 </div>
               </div>
             </div>
