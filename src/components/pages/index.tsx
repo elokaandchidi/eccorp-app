@@ -7,9 +7,7 @@ import { announcementQuery, newsDetailMoreQuery } from "../../utils/data";
 import Footer from "../reuseables/footer";
 import Navbar from "../reuseables/navbar";
 
-import bloomarketLogo from '../../assets/images/bloo_market_logo.png';
-import ectcLogo from '../../assets/images/ectc_logo.png';
-import vyesocialLogo from '../../assets/images/vye_social_logo.png';
+import ectcLogo from '../../assets/images/ectc_logo.svg';
 import bgImg from '../../assets/images/bg_home.png';
 
 
@@ -63,18 +61,18 @@ const Home = () => {
       </div>
       <div className='flex flex-col items-center w-full'>
         <div className='text-white lg:text-3xl font-semibold playfair-font tracking-wide'>SUBSIDIARIES</div>
-        <div className='flex lg:flex-row flex-col items-center lg:gap-[4rem] gap-10 mt-10'>
+        <div className='flex lg:flex-row flex-col lg:pl-[30rem] lg:items-end w-full lg:gap-[4rem] gap-10 mt-10'>
           <div className='flex flex-col items-center gap-2'>
-            <img src={bloomarketLogo} alt='logo' className=''/>
+            <div className='text-[4rem] text-white montserrat-font'>bloo<span className='text-orange-700'>.</span><span className='font-semibold'>market</span></div>
             <div className='text-white playfair-font'>Established 2023</div>
           </div>
           <div className='flex flex-col items-center gap-2'>
-            <img src={ectcLogo} alt='logo' className=''/>
-            <div className='text-white playfair-font'>Established 2023</div>
+            <img src={ectcLogo} alt='logo' className='w-[15rem]'/>
+            <div className='text-white playfair-font'>Established 2013</div>
           </div>
           <div className='flex flex-col items-center gap-2'>
-            <img src={vyesocialLogo} alt='logo' className='mb-[.6rem]'/>
-            <div className='text-white playfair-font mb-[-1rem]'>Established 2023</div>
+            <div className='text-[5rem] text-white'>vYe</div>
+            <div className='text-white playfair-font'>Established 2023</div>
           </div>
         </div>
       </div>
@@ -87,10 +85,10 @@ const Home = () => {
             About EC CORP
           </div>
           <div className='text-white lg:w-3/4'>
-            Lorem ipsum dolor sit amet consectetur. Sed quam augue in aliquet rutrum ut. Vitae id laoreet donec gravida pulvinar et dis orci tempor. Non lorem elit consequat tortor. Neque bibendum dictum posuere eget ornare.
+            EC Corp. is a global technology company established by Eloka Amobi and Chidi Nlewedim in 2023. It is the parent company of ECTC LTD, bloo.market and Vye. EC Corp was created to reflect its expansion in IT consulting and technology products.
           </div>
           <div className='text-white lg:w-3/4'>
-            Dolor semper orci dignissim vehicula vel consectetur. Vestibulum facilisis vitae diam diam dictum odio ullamcorper leo vitae. Vitae lectus a neque orci tellus suspendisse pellentesque vitae. Eu consectetur proin justo orci arcu risus. Gravida justo ante elementum potenti leo blandit ullamcorper et. Amet lectus elementum gravida adipiscing pellentesque pellentesque sapien.
+            EC Corp. operates in United Kingdom and Europe, and recently commenced expansion into USA and Africa and Middle East, through its subsidiaries. EC Corp invests in numerous social impact programmes globally, such as partnering with Amobi Leadership, TechforNigeria and many other organisations.
           </div>
           <div className='flex lg:justify-start justify-center lg:mt-5 mt-2'>
             <NavLink to='/about' className='border border-white p-3 lg:px-20 px-[3rem] text-white font-semibold lg:text-lg text-xs'>READ MORE</NavLink>

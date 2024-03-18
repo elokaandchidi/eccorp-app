@@ -2,10 +2,10 @@ import { NavLink } from "react-router-dom";
 import Footer from "../reuseables/footer";
 import Navbar from "../reuseables/navbar";
 
-import BloomarketSiteImage from '../../assets/images/bloomarket_site.png';
-import VyesociaSiteImage from '../../assets/images/vye_social_site.png';
-import BloomarketLogo from '../../assets/images/bloo_market_logo_white.png';
-import EctcLogo from '../../assets/images/ectc_logo.png';
+import BloomarketSiteImage from '../../assets/images/bloomarket_site.svg';
+import VyesociaSiteImage from '../../assets/images/vye_social_site.svg';
+import BloomarketLogo from '../../assets/images/bloo_market_logo.png';
+import EctcLogo from '../../assets/images/ectc_logo.svg';
 import bgImg from '../../assets/images/bg_home.png';
 import VyesocialLogo from '../../assets/images/vye_social_logo.png';
 
@@ -33,17 +33,12 @@ const Subsidaries = () => {
           <img src={BloomarketSiteImage} className='lg:w-1/2 max:h-[30rem]' alt='BloomarketSiteImage'/>
           <div className='bg-[#383838] lg:w-1/2 relative'>
             <div className='flex flex-col gap-4 lg:p-10 p-5'>
-              <div className='flex flex-row justify-between items-center mb-5'>
-                <div className='text-white playfair-font lg:text-[2rem] text-lg font-bold'>
-                  Bloo Market
-                </div>
+              <div className='flex flex-row justify-end items-center mb-5'>
                 <img src={BloomarketLogo} className='lg:w-40' alt='BloomarketLogo'/>
               </div>
               <div className='text-white lg:text-xl text-sm leading-relaxed'>
-                Lorem ipsum dolor sit amet consectetur. Sed quam augue in aliquet rutrum ut. Vitae id laoreet donec gravida pulvinar et dis orci tempor. Non lorem elit consequat tortor. Neque bibendum dictum posuere eget ornare.
-              </div>
-              <div className='text-white lg:text-xl text-sm leading-relaxed'>
-                Dolor semper orci dignissim vehicula vel consectetur. Vestibulum facilisis vitae diam diam dictum odio ullamcorper leo vitae. Vitae lectus a neque orci tellus suspendisse pellentesque vitae. Eu consectetur proin justo orci arcu risus.
+                bloo.market is a platform that links both buyers and sellers effortlessly. Few key things you want to look out for; you can shop on bloo.market, you can sell on bloo.market, you can negotiate prices with vendors on bloo.market and much more. We are more focused on event vendors and event planners, so if you are planning an event anytime soon (Parties, Conferences, etc) or you just want to treat yourself, then you should be registered on bloo.market. If you are a vendor (food vendor , MC or DJ,
+                baker, tailor, etc) then you should also register on bloo.market to get clients.
               </div>
               <div className='flex flex-row justify-end items-center right-10 lg:absolute bottom-10 gap-8 mt-10'>
                 <div className='bg-[#B39659] p-4 px-10 text-white font-semibold lg:text-xl text-sm gap-2 tracking-wide uppercase flex flex-row items-center'>
@@ -57,17 +52,11 @@ const Subsidaries = () => {
         <div className='flex lg:flex-row flex-col w-full gap-10'>
           <div className='bg-[#383838] lg:w-1/2 relative'>
             <div className='flex flex-col gap-4 lg:p-10 p-5'>
-              <div className='flex flex-row justify-between items-center mb-5'>
-                <div className='text-white playfair-font lg:text-[2rem] text-lg font-bold'>
-                  Eamond & Chase
-                </div>
-                <img src={EctcLogo} className='w-20' alt='EctcLogo'/>
+              <div className='flex flex-row justify-end items-center mb-5'>
+                <img src={EctcLogo} className='w-32' alt='EctcLogo'/>
               </div>
               <div className='text-white lg:text-xl text-sm leading-relaxed'>
-                Lorem ipsum dolor sit amet consectetur. Sed quam augue in aliquet rutrum ut. Vitae id laoreet donec gravida pulvinar et dis orci tempor. Non lorem elit consequat tortor. Neque bibendum dictum posuere eget ornare.
-              </div>
-              <div className='text-white lg:text-xl text-sm leading-relaxed'>
-                Dolor semper orci dignissim vehicula vel consectetur. Vestibulum facilisis vitae diam diam dictum odio ullamcorper leo vitae. Vitae lectus a neque orci tellus suspendisse pellentesque vitae. Eu consectetur proin justo orci arcu risus.
+                ECTC LTD provides expert advice and solutions to businesses seeking to leverage technology for strategic advantage. With a team of experienced technology consultants, we offer a wide range of services, including app, software and website development, IT strategy, digital transformation, cybersecurity, cloud computing and data analytics. Our company's track record of successful projects and satisfied clients speaks to the quality and effectiveness of our services.
               </div>
               <div className='flex flex-row justify-end items-center right-10 lg:absolute bottom-10 gap-8 mt-10'>
                 <div className='bg-[#B39659] p-4 px-10 text-white font-semibold lg:text-xl text-sm gap-2 tracking-wide uppercase flex flex-row items-center'>
@@ -83,17 +72,11 @@ const Subsidaries = () => {
           <img src={VyesociaSiteImage} className='lg:w-1/2 max:h-[30rem]' alt='VyesociaSiteImage'/>
           <div className='bg-[#383838] lg:w-1/2 relative'>
             <div className='flex flex-col gap-4 lg:p-10 p-5'>
-              <div className='flex flex-row justify-between items-center mb-5'>
-                <div className='text-white playfair-font lg:text-[2rem] text-lg font-bold'>
-                Vye Social
-                </div>
-                <img src={VyesocialLogo} className='lg:w-40' alt='VyesocialLogo'/>
+              <div className='flex flex-row justify-end items-center mb-5'>
+                <div className='text-[3rem] text-white'>vYe</div>
               </div>
               <div className='text-white lg:text-xl text-sm leading-relaxed'>
-                Lorem ipsum dolor sit amet consectetur. Sed quam augue in aliquet rutrum ut. Vitae id laoreet donec gravida pulvinar et dis orci tempor. Non lorem elit consequat tortor. Neque bibendum dictum posuere eget ornare.
-              </div>
-              <div className='text-white lg:text-xl text-sm leading-relaxed'>
-                Dolor semper orci dignissim vehicula vel consectetur. Vestibulum facilisis vitae diam diam dictum odio ullamcorper leo vitae. Vitae lectus a neque orci tellus suspendisse pellentesque vitae. Eu consectetur proin justo orci arcu risus.
+                Vye - Voice Your Experience is a social and political website, presented on a dynamic platform that fosters open dialogue, informed debate, and community engagement around pressing social and political issues. It serves as a hub for individuals, groups, and organizations to share their perspectives, voice their opinions, and collaborate on solutions to complex societal challenges.
               </div>
               <div className='flex flex-row justify-end items-center right-10 lg:absolute bottom-10 gap-8 mt-10'>
                 <div className='bg-[#B39659] p-4 px-10 text-white font-semibold lg:text-xl text-sm gap-2 tracking-wide uppercase flex flex-row items-center'>
