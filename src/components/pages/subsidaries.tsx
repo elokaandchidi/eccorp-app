@@ -7,7 +7,6 @@ import VyesociaSiteImage from '../../assets/images/vye_social_site.svg';
 import BloomarketLogo from '../../assets/images/bloo_market_logo.png';
 import EctcLogo from '../../assets/images/ectc_logo.svg';
 import bgImg from '../../assets/images/bg_home.png';
-import VyesocialLogo from '../../assets/images/vye_social_logo.png';
 
 const Subsidaries = () => {
   
@@ -41,10 +40,10 @@ const Subsidaries = () => {
                 baker, tailor, etc) then you should also register on bloo.market to get clients.
               </div>
               <div className='flex flex-row justify-end items-center right-10 lg:absolute bottom-10 gap-8 mt-10'>
-                <div className='bg-[#B39659] p-4 px-10 text-white font-semibold lg:text-xl text-sm gap-2 tracking-wide uppercase flex flex-row items-center'>
+                <a href="https://bloo.market" target="_blank" rel="noreferrer" className='bg-[#B39659] p-4 px-10 text-white font-semibold lg:text-xl text-sm gap-2 tracking-wide uppercase flex flex-row items-center'>
                   Go to Bloo Market
                   <i className="fi fi-rr-angle-small-right mb-[-.3rem]"></i>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -58,12 +57,12 @@ const Subsidaries = () => {
               <div className='text-white lg:text-xl text-sm leading-relaxed'>
                 ECTC LTD provides expert advice and solutions to businesses seeking to leverage technology for strategic advantage. With a team of experienced technology consultants, we offer a wide range of services, including app, software and website development, IT strategy, digital transformation, cybersecurity, cloud computing and data analytics. Our company's track record of successful projects and satisfied clients speaks to the quality and effectiveness of our services.
               </div>
-              <div className='flex flex-row justify-end items-center right-10 lg:absolute bottom-10 gap-8 mt-10'>
+              <a href="http://ectc.ltd" target="_blank" rel="noreferrer" className='flex flex-row justify-end items-center right-10 lg:absolute bottom-10 gap-8 mt-10'>
                 <div className='bg-[#B39659] p-4 px-10 text-white font-semibold lg:text-xl text-sm gap-2 tracking-wide uppercase flex flex-row items-center'>
                   Go to ECTC
                   <i className="fi fi-rr-angle-small-right mb-[-.3rem]"></i>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
           <img src={bgImg} className='lg:w-1/2 max:h-[30rem]' alt='BloomarketSiteImage'/>
@@ -79,10 +78,10 @@ const Subsidaries = () => {
                 Vye - Voice Your Experience is a social and political website, presented on a dynamic platform that fosters open dialogue, informed debate, and community engagement around pressing social and political issues. It serves as a hub for individuals, groups, and organizations to share their perspectives, voice their opinions, and collaborate on solutions to complex societal challenges.
               </div>
               <div className='flex flex-row justify-end items-center right-10 lg:absolute bottom-10 gap-8 mt-10'>
-                <div className='bg-[#B39659] p-4 px-10 text-white font-semibold lg:text-xl text-sm gap-2 tracking-wide uppercase flex flex-row items-center'>
+                <a href="https://www.vye.social" target="_blank" rel="noreferrer" className='bg-[#B39659] p-4 px-10 text-white font-semibold lg:text-xl text-sm gap-2 tracking-wide uppercase flex flex-row items-center'>
                   Go to Vye Social
                   <i className="fi fi-rr-angle-small-right mb-[-.3rem]"></i>
-                </div>
+                </a>
               </div>
             </div>
           </div>

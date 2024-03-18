@@ -61,7 +61,7 @@ const Home = () => {
       </div>
       <div className='flex flex-col items-center w-full'>
         <div className='text-white lg:text-3xl font-semibold playfair-font tracking-wide'>SUBSIDIARIES</div>
-        <div className='flex lg:flex-row flex-col lg:pl-[30rem] lg:items-end w-full lg:gap-[4rem] gap-10 mt-10'>
+        <div className='flex lg:flex-row flex-col lg:items-end lg:justify-center w-full lg:gap-[4rem] gap-10 mt-10'>
           <div className='flex flex-col items-center gap-2'>
             <div className='text-[4rem] text-white montserrat-font'>bloo<span className='text-orange-700'>.</span><span className='font-semibold'>market</span></div>
             <div className='text-white playfair-font'>Established 2023</div>
