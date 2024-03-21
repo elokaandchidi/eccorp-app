@@ -24,16 +24,16 @@ const Subsidaries = () => {
           <div className={`leading-relaxed text-white playfair-font lg:text-[3rem] text-2xl mt-5 font-bold text-center lg:w-1/3 w-4/6`}>
             Subsidiaries
           </div>
-          <div className='text-white lg:text-lg text-sm lg:w-full w-3/4 text-center'>Explore EC CORP's diverse range of subsidiaries, each specialising in unique areas to meet the evolving needs of our clients and communities..</div>
+          <div className='text-white lg:text-[1.25rem] text-[1rem] lg:w-full w-3/4 text-center'>Explore EC CORP's diverse range of subsidiaries, each specialising in unique areas to meet the evolving needs of our clients and communities..</div>
         </div>
       </div>
       <div className='flex flex-col gap-10 justify-between items-start w-full lg:px-[10rem] px-5'>
         <div className='flex lg:flex-row flex-col-reverse w-full gap-10'>
-          <img src={BloomarketSiteImage} className='lg:w-1/2 max:h-[30rem]' alt='BloomarketSiteImage'/>
+          <img src={BloomarketSiteImage} className='lg:w-1/2 lg:h-[30rem]' alt='BloomarketSiteImage'/>
           <div className='bg-[#383838] lg:w-1/2 relative'>
             <div className='flex flex-col gap-4 lg:p-10 p-5'>
               <div className='flex flex-row justify-end items-center mb-5'>
-                <img src={BloomarketLogo} className='lg:w-40' alt='BloomarketLogo'/>
+                <img src={BloomarketLogo} className='h-12' alt='BloomarketLogo'/>
               </div>
               <div className='text-white lg:text-xl text-sm leading-relaxed'>
                 bloo.market is a platform that links both buyers and sellers effortlessly. Few key things you want to look out for; you can shop on bloo.market, you can sell on bloo.market, you can negotiate prices with vendors on bloo.market and much more. We are more focused on event vendors and event planners, so if you are planning an event anytime soon (Parties, Conferences, etc) or you just want to treat yourself, then you should be registered on bloo.market. If you are a vendor (food vendor , MC or DJ,
@@ -52,7 +52,7 @@ const Subsidaries = () => {
           <div className='bg-[#383838] lg:w-1/2 relative'>
             <div className='flex flex-col gap-4 lg:p-10 p-5'>
               <div className='flex flex-row justify-end items-center mb-5'>
-                <img src={EctcLogo} className='w-32' alt='EctcLogo'/>
+                <img src={EctcLogo} className='h-20' alt='EctcLogo'/>
               </div>
               <div className='text-white lg:text-xl text-sm leading-relaxed'>
                 ECTC LTD provides expert advice and solutions to businesses seeking to leverage technology for strategic advantage. With a team of experienced technology consultants, we offer a wide range of services, including app, software and website development, IT strategy, digital transformation, cybersecurity, cloud computing and data analytics. Our company's track record of successful projects and satisfied clients speaks to the quality and effectiveness of our services.
@@ -65,10 +65,10 @@ const Subsidaries = () => {
               </a>
             </div>
           </div>
-          <img src={bgImg} className='lg:w-1/2 max:h-[30rem]' alt='BloomarketSiteImage'/>
+          <img src={bgImg} className='lg:w-1/2 lg:h-[30rem]' alt='BloomarketSiteImage'/>
         </div>
         <div className='flex lg:flex-row flex-col-reverse w-full gap-10'>
-          <img src={VyesociaSiteImage} className='lg:w-1/2 max:h-[30rem]' alt='VyesociaSiteImage'/>
+          <img src={VyesociaSiteImage} className='lg:w-1/2 lg:h-[30rem]' alt='VyesociaSiteImage'/>
           <div className='bg-[#383838] lg:w-1/2 relative'>
             <div className='flex flex-col gap-4 lg:p-10 p-5'>
               <div className='flex flex-row justify-end items-center mb-5'>

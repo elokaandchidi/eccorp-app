@@ -7,6 +7,7 @@ import { announcementQuery, newsDetailMoreQuery } from "../../utils/data";
 import Footer from "../reuseables/footer";
 import Navbar from "../reuseables/navbar";
 
+import bloo_marketLogo from '../../assets/images/bloo_market_logo.svg';
 import ectcLogo from '../../assets/images/ectc_logo.svg';
 import bgImg from '../../assets/images/bg_home.png';
 
@@ -44,18 +45,18 @@ const Home = () => {
 
   
   return (
-    <div className='flex flex-col lg:gap-[5rem] gap-10 w-full'>
+    <div className='flex flex-col lg:gap-[5rem] gap-7 w-full'>
       <div className='bg-home bg-cover w-full'>
         <Navbar/>
 
-        <div className='flex flex-col lg:gap-10 gap-6 w-full items-center lg:my-[7rem] mb-10'>
-          <div className={`leading-relaxed text-white playfair-font lg:text-[3rem] text-3xl mt-5 font-bold text-center lg:w-1/3 w-4/6`}>
+        <div className='flex flex-col lg:gap-10 gap-8 w-full items-center lg:my-[7rem] mb-10'>
+          <div className={`leading-normal text-white playfair-font lg:text-[3rem] text-3xl mt-5 font-bold text-center lg:w-1/3 w-4/6`}>
             Empowering <span className='text-[#B39659]'>Innovations</span> to Enrich <span className='text-[#B39659]'>Lives</span>
           </div>
-          <div className='text-white lg:text-lg text-sm'>EC CORP is an IT powered company</div>
-          <div className='flex lg:flex-row flex-col items-center lg:gap-8 gap-5'>
-            <a href="#about" className='bg-[#B39659] p-3 px-5 text-white font-semibold text-sm lg:text-xl'>ABOUT THE CORP</a>
-            <NavLink to='/subsidaries' className='border border-white p-3 px-5 text-white font-semibold text-sm lg:text-xl'>THE SUBSIDIARIES</NavLink>
+          <div className='text-white leading-4 lg:text-[1.25rem] text-[1rem]'>EC CORP is an IT powered company</div>
+          <div className='flex lg:flex-row flex-col items-center lg:gap-8 gap-6'>
+            <a href="#about" className='bg-[#B39659] p-3 px-10 text-white font-semibold text-sm lg:text-xl'>ABOUT THE CORP</a>
+            <NavLink to='/subsidaries' className='border border-white p-3 px-10 text-white font-semibold text-sm lg:text-xl'>THE SUBSIDIARIES</NavLink>
           </div>
         </div>
       </div>
@@ -63,15 +64,15 @@ const Home = () => {
         <div className='text-white lg:text-3xl font-semibold playfair-font tracking-wide'>SUBSIDIARIES</div>
         <div className='flex lg:flex-row flex-col lg:items-end lg:justify-center w-full lg:gap-[4rem] gap-10 mt-10'>
           <div className='flex flex-col items-center gap-2'>
-            <div className='text-[4rem] text-white montserrat-font'>bloo<span className='text-orange-700'>.</span><span className='font-semibold'>market</span></div>
-            <div className='text-white playfair-font'>Established 2023</div>
-          </div>
-          <div className='flex flex-col items-center gap-2'>
-            <img src={ectcLogo} alt='logo' className='w-[15rem]'/>
+            <img src={ectcLogo} alt='logo' className='h-20'/>
             <div className='text-white playfair-font'>Established 2013</div>
           </div>
           <div className='flex flex-col items-center gap-2'>
-            <div className='text-[5rem] text-white'>vYe</div>
+            <img src={bloo_marketLogo} alt='logo' className='lg:h-20 h-14'/>
+            <div className='text-white playfair-font'>Established 2023</div>
+          </div>
+          <div className='flex flex-col items-center gap-2'>
+            <div className='text-[3.5rem] text-white'>vYe</div>
             <div className='text-white playfair-font'>Established 2023</div>
           </div>
         </div>
@@ -79,9 +80,9 @@ const Home = () => {
       <div className='w-full px-5 pt-10 lg:p-10 lg:px-[10rem]'>
         <div className='border-b border-[#B39659]'></div>
       </div>
-      <div id="about" className='flex lg:flex-row flex-col gap-5 justify-between items-center w-full lg:px-[10rem] px-5'>
-        <div className='flex flex-col lg:w-3/5 gap-3 lg:text-lg text-sm'>
-          <div className='text-white playfair-font lg:text-[2rem] text-xl tracking-wider lg:text-left text-center mb-5 font-bold'>
+      <div id="about" className='flex lg:flex-row flex-col gap-5 justify-between lg:items-start items-center w-full lg:px-[10rem] px-5'>
+        <div className='flex flex-col lg:w-3/5 lg:gap-3 gap-2 lg:text-lg text-sm'>
+          <div className='text-white playfair-font lg:text-[2rem] text-xl tracking-wider lg:text-left text-center lg:mb-5 font-bold'>
             About EC CORP
           </div>
           <div className='text-white lg:w-3/4'>
@@ -95,7 +96,7 @@ const Home = () => {
           </div>
         </div>
         <div className='lg:w-2/5 flex flex-col items-end'>
-          <img src={bgImg} alt='img' className='w-full'/>
+          <img src={bgImg} alt='img' className='w-full h-[22rem]'/>
         </div>
       </div>
       <div className='flex flex-col items-center w-full lg:px-[10rem] px-5'>

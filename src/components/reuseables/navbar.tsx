@@ -13,9 +13,9 @@ const Navbar = () => {
     <div className='flex flex-col w-full relative'>
       <div className='flex flex-row items-center justify-between w-full lg:py-5 py-3 lg:px-[10rem] px-5 border-b border-white'>
         <NavLink to='/'>
-          <img src={logo} alt='logo' className=''/>
+          <img src={logo} alt='logo' className='lg:h-20'/>
         </NavLink>
-        <div className={`${isMobile ? 'hidden' : '' } tracking-wide flex flex-row gap-10 text-white items-center`}>
+        <div className={`${isMobile ? 'hidden' : '' } tracking-wide flex flex-row gap-10 text-lg text-white items-center`}>
           <NavLink to='/about'>
             ABOUT
           </NavLink>
@@ -33,7 +33,7 @@ const Navbar = () => {
       {showMenu && 
         <div className='flex flex-col absolute w-full h-screen bg-[#110f16] bg-opacity-70'>
           <div className='flex flex-col w-full relative bg-white'>
-            <div className='flex flex-row items-center justify-between w-full py-3  px-5 border-b border-gray-200'>
+            <div className='flex flex-row items-center justify-between w-full py-3 px-5 border-b border-gray-200'>
               <NavLink to='/'>
                 <img src={logo} alt='logo' className=''/>
               </NavLink>

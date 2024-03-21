@@ -21,15 +21,14 @@ const About = () => {
           <div className={`leading-relaxed text-white playfair-font lg:text-[3rem] text-2xl mt-5 font-bold text-center lg:w-1/3 w-4/6`}>
             About EC CORP
           </div>
-          <div className='text-white lg:text-lg text-sm lg:w-full w-3/4 text-center'>Welcome to EC CORP, the visionary force behind the emergence of innovative enterprises.</div>
+          <div className='text-white lg:text-[1.25rem] text-[1rem] lg:w-full w-3/4 text-center'>Welcome to EC CORP, the visionary force behind the emergence of innovative enterprises.</div>
         </div>
       </div>
       <div className='flex lg:flex-row flex-col gap-5 justify-between items-start w-full lg:px-[10rem] px-5'>
         <div className='flex flex-col lg:w-2/5 gap-3 lg:text-lg text-sm'>
-          <div className='text-white playfair-font lg:text-[3rem] text-[1.7rem] leading-relaxed tracking-wider text-left font-bold'>
+          <div className='text-white playfair-font lg:text-[3rem] text-[1.7rem] tracking-wider text-left font-bold'>
           Meet the Founders
           </div>
-          
         </div>
         <div className='lg:w-3/5 flex flex-col gap-10 text-white'>
           <div className='text-lg'>
@@ -57,8 +56,8 @@ const About = () => {
       </div>
       <div className='flex lg:flex-row flex-col gap-5 justify-between items-start w-full lg:px-[10rem] px-5'>
         <div className='flex flex-col lg:w-2/5 gap-3 lg:text-lg text-sm'>
-          <div className='text-white playfair-font lg:text-[3rem] text-[1.7rem] leading-relaxed tracking-wider text-left font-bold'>
-            Empowering <br/> Innovations to Enrich <br/> Lives
+          <div className='text-white playfair-font lg:text-[3rem] text-[1.7rem] leading-snug tracking-wider text-left font-bold'>
+            Empowering Innovations to Enrich  Lives
           </div>
           
         </div>
@@ -68,7 +67,7 @@ const About = () => {
             <div>2. Technology</div>
             <div>3. Impact</div>
           </div>
-          <div className='text-lg'>
+          <div className='text-lg lg:mt-10 mt-5'>
             We believe that innovation is the lifeblood of any successful multinational corporation, and we leverage our subsidiaries worldwide to drive technological advancements. Through strategic partnerships and collaborations with local talent, we bring fresh perspectives and innovative ideas to the fore.
           </div>
           <div className='text-lg'>

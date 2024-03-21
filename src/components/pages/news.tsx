@@ -81,11 +81,11 @@ const News = () => {
           <div className={`leading-relaxed text-white playfair-font lg:text-[3rem] text-2xl my-5 font-bold text-center lg:w-1/3 w-4/6`}>
             News
           </div>
-          <div className='text-white lg:text-lg text-sm lg:w-full w-3/4 text-center'>Welcome to the latest news and updates from EC CORP.</div>
-          <div className='text-white lg:text-lg text-sm lg:w-full w-3/4 text-center'>Stay informed about our latest developments, achievements, and announcements.</div>
+          <div className='text-white lg:text-[1.25rem] text-[1rem] lg:w-full w-3/4 text-center'>Welcome to the latest news and updates from EC CORP.</div>
+          <div className='text-white lg:text-[1.25rem] text-[1rem] lg:w-full w-3/4 text-center'>Stay informed about our latest developments, achievements, and announcements.</div>
           <div className='bg-white p-3 mt-5 text-sm flex flex-row items-center lg:w-1/3 w-3/4 text-center'>
             <input type="text" placeholder="Search for article" value={searchParams.searchTerm}
-                onChange={({ target}) => {setSearchParams({ ...searchParams, searchTerm: target.value })}} className='bg-transparent w-full outline-none'/>
+                onChange={({ target}) => {setSearchParams({ ...searchParams, searchTerm: target.value })}} className='bg-transparent lg:text-lg w-full outline-none'/>
             <i className="fi fi-rr-search scale-x-[-1] mb-[-.4rem]"></i>
           </div>
         </div>
