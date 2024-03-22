@@ -53,7 +53,7 @@ const Home = () => {
           <div className={`leading-normal text-white playfair-font lg:text-[3rem] text-3xl mt-5 font-bold text-center lg:w-1/3 w-4/6`}>
             Empowering <span className='text-[#B39659]'>Innovations</span> to Enrich <span className='text-[#B39659]'>Lives</span>
           </div>
-          <div className='text-white leading-4 lg:text-[1.25rem] text-[1rem]'>EC CORP is an IT powered company</div>
+          {/* <div className='text-white leading-4 lg:text-[1.25rem] text-[1rem]'>EC CORP is an IT powered company</div> */}
           <div className='flex lg:flex-row flex-col items-center lg:gap-8 gap-6'>
             <a href="#about" className='bg-[#B39659] p-3 px-10 text-white font-semibold text-sm lg:text-xl'>ABOUT THE CORP</a>
             <NavLink to='/subsidaries' className='border border-white p-3 px-10 text-white font-semibold text-sm lg:text-xl'>THE SUBSIDIARIES</NavLink>
