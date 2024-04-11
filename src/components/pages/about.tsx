@@ -3,7 +3,8 @@ import Footer from "../reuseables/footer";
 import Navbar from "../reuseables/navbar";
 
 import ImageAbout from '../../assets/images/img_about.png';
-import ImageChidi from '../../assets/images/chidi.png';
+import ImageChidi from '../../assets/images/chidi.jpg';
+import ImageEamon from '../../assets/images/eamon.jpg';
 
 const About = () => {
   
@@ -30,27 +31,25 @@ const About = () => {
           Meet the Founders
           </div>
         </div>
-        <div className='lg:w-3/5 flex flex-col gap-10 text-white'>
-          <div className='text-lg'>
-            Lorem ipsum dolor sit amet consectetur. Cursus tortor vitae posuere eget potenti elementum elit urna nulla. Amet neque placerat sociis nisl. Ultrices sollicitudin facilisis tellus nibh gravida duis. 
-          </div>
-          <div className='flex lg:flex-row flex-col gap-10 w-full lg:items-center'>
-            <img src={ImageChidi} className='lg:w-1/2' alt="background"/>
+        <div className='lg:w-3/5 flex flex-col gap-10 text-white items-end'>
+          <div className='flex lg:flex-row flex-col gap-10 lg:items-start justify-end'>
+            <img src={ImageEamon} className='object-contain h-[20rem]' alt="background"/>
             <div className='flex flex-col lg:w-1/2'>
-              <div className='text-[2rem] font-semibold'>Eloka</div>
+              <div className='text-[2rem] font-semibold mt-[-.6rem]'>Eloka</div>
               <div className='text-lg lg:mt-10 mt-5'>
-                Eget elementum morbi non in tristique purus venenatis eu. Tristique mi id integer id ac massa nullam euismod. Tincidunt rhoncus placerat pretium quisque fermentum quam lorem ullamcorper. Lobortis purus metus praesent platea magna sed suspendisse tristique. Pretium aliquam erat nunc blandit nunc. Leo tellus eu arcu tempor vel vitae. Sed magnis tellus posuere feugiat.
+                Eloka Amobi (alias - Eamon) is a tech entrepreneur known for his strategic insight and innovative leadership, with a passion for technology product design and digital innovation. With his extensive experience in business, financial services, law and technology, has played a pivotal role in shaping EC Corp’s growth trajectory from its inception.
               </div>
             </div>
           </div>
-          <div className='flex lg:flex-row flex-col-reverse gap-10 w-full items-center'>
+          <div className="border-t-2 border-[#B39659] w-full lg:w-5/6"></div>
+          <div className='flex lg:flex-row flex-col-reverse gap-10 lg:items-start justify-end'>
             <div className='flex flex-col lg:w-1/2'>
               <div className='text-[2rem] font-semibold'>Chidi</div>
               <div className='text-lg lg:mt-10 mt-5'>
-                Eget elementum morbi non in tristique purus venenatis eu. Tristique mi id integer id ac massa nullam euismod. Tincidunt rhoncus placerat pretium quisque fermentum quam lorem ullamcorper. Lobortis purus metus praesent platea magna sed suspendisse tristique. Pretium aliquam erat nunc blandit nunc. Leo tellus eu arcu tempor vel vitae. Sed magnis tellus posuere feugiat.
+                Chidi Nlewedim (alias - Chase), is a tech entrepreneur with a passion for data and Artificial Intelligence (AI) and has been instrumental in driving EC Corp’s technological advancements and strategic direction, and has a background in pharmaceutical, finance and nuclear.
               </div>
             </div>
-            <img src={ImageChidi} className='lg:w-1/2' alt="background"/>
+            <img src={ImageEamon} className='object-contain h-[20rem]' alt="background"/>
           </div>
         </div>
       </div>

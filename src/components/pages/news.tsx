@@ -54,7 +54,7 @@ const News = () => {
       setTotalPage(Math.ceil(data / searchParams.pageSize));
     })
 
-    
+    // eslint-disable-next-line
   }, [searchParams]);
 
   const onPageChange = (page: number) => {

@@ -8,7 +8,7 @@ import Footer from "../reuseables/footer";
 import Navbar from "../reuseables/navbar";
 
 import bloo_marketLogo from '../../assets/images/bloo_market_logo.svg';
-import ectcLogo from '../../assets/images/ectc_logo.svg';
+import ectcLogo from '../../assets/images/ectc.png';
 import bgImg from '../../assets/images/bg_home.png';
 
 
@@ -65,7 +65,7 @@ const Home = () => {
         <div className='flex lg:flex-row flex-col lg:items-end lg:justify-center w-full lg:gap-[4rem] gap-10 mt-10'>
           <div className='flex flex-col items-center gap-2'>
             <img src={ectcLogo} alt='logo' className='h-20'/>
-            <div className='text-white playfair-font'>Established 2013</div>
+            <div className='text-white playfair-font'>Established 2014</div>
           </div>
           <div className='flex flex-col items-center gap-2'>
             <img src={bloo_marketLogo} alt='logo' className='lg:h-20 h-14'/>
@@ -97,6 +97,38 @@ const Home = () => {
         </div>
         <div className='lg:w-2/5 flex flex-col items-end'>
           <img src={bgImg} alt='img' className='w-full h-[22rem]'/>
+        </div>
+      </div>
+      <div className='flex flex-col items-center w-full lg:px-[10rem] px-5'>
+        <div className='text-white lg:text-[2rem] text-lg font-semibold playfair-font tracking-wide'>ANNOUNCEMENTS</div>
+        <div className='grid lg:grid-cols-3 lg:gap-[4rem] gap-5 lg:mt-10 mt-5'>
+          {announcementList.map((post: NewInfo) => (
+              <div className="bg-[#383838] flex flex-col items-center" key={post._id}>
+                <div className="flex flex-col items-center w-full gap-4 lg:p-10 p-5">
+                  <img src={post.mainImageUrl} alt={post.title} />
+                  <div className="flex flex-col items-center w-full gap-4">
+                    <div className="text-white playfair-font lg:text-[1.5rem] text-lg mb-3 font-bold line-clamp-2">
+                      {post?.title}
+                    </div>
+                    <div className="text-white lg:text-lg text-sm line-clamp-2">{post?.subtitle}</div>
+                  </div>
+                </div>
+      
+                <div className="flex flex-col w-full items-center lg:gap-3 gap-1 border-t lg:py-5 py-3">
+                  <NavLink to={`/news/${post?._id}`} className="text-[#B39659] lg:text-xl font-semibold gap-2 flex flex-row items-center">
+                    READ ARTICLE
+                    <i className="fi fi-rr-angle-small-right mb-[-.3rem]"></i>
+                  </NavLink>
+                  <div className="text-white lg:text-lg text-sm gap-2 flex flex-row items-center">
+                    <i className="fi fi-rr-hourglass-end mb-[-.3rem]"></i>
+                    {post?.duration} mins read
+                  </div>
+                </div>
+              </div>
+            ))}
+        </div>
+        <div className={`${announcementList.length !== 0 ? 'hidden' : ''} w-full flex flex-col gap-3 items-center justify-center text-white my-[5rem]`}>
+          <div className='text-2xl playfair-font font-semibold mb-3'>No announcement found</div>
         </div>
       </div>
       <div className='flex flex-col items-center w-full lg:px-[10rem] px-5'>
@@ -136,38 +168,7 @@ const Home = () => {
           </NavLink>
         </div>
       </div>
-      <div className='flex flex-col items-center w-full lg:px-[10rem] px-5'>
-        <div className='text-white lg:text-[2rem] text-lg font-semibold playfair-font tracking-wide'>ANNOUNCEMENTS</div>
-        <div className='grid lg:grid-cols-3 lg:gap-[4rem] gap-5 lg:mt-10 mt-5'>
-          {announcementList.map((post: NewInfo) => (
-              <div className="bg-[#383838] flex flex-col items-center" key={post._id}>
-                <div className="flex flex-col items-center w-full gap-4 lg:p-10 p-5">
-                  <img src={post.mainImageUrl} alt={post.title} />
-                  <div className="flex flex-col items-center w-full gap-4">
-                    <div className="text-white playfair-font lg:text-[1.5rem] text-lg mb-3 font-bold line-clamp-2">
-                      {post?.title}
-                    </div>
-                    <div className="text-white lg:text-lg text-sm line-clamp-2">{post?.subtitle}</div>
-                  </div>
-                </div>
       
-                <div className="flex flex-col w-full items-center lg:gap-3 gap-1 border-t lg:py-5 py-3">
-                  <NavLink to={`/news/${post?._id}`} className="text-[#B39659] lg:text-xl font-semibold gap-2 flex flex-row items-center">
-                    READ ARTICLE
-                    <i className="fi fi-rr-angle-small-right mb-[-.3rem]"></i>
-                  </NavLink>
-                  <div className="text-white lg:text-lg text-sm gap-2 flex flex-row items-center">
-                    <i className="fi fi-rr-hourglass-end mb-[-.3rem]"></i>
-                    {post?.duration} mins read
-                  </div>
-                </div>
-              </div>
-            ))}
-        </div>
-        <div className={`${announcementList.length !== 0 ? 'hidden' : ''} w-full flex flex-col gap-3 items-center justify-center text-white my-[5rem]`}>
-          <div className='text-2xl playfair-font font-semibold mb-3'>No announcement found</div>
-        </div>
-      </div>
       <Footer/>
     </div>
   )

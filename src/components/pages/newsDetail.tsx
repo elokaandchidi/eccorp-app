@@ -23,7 +23,6 @@ export interface NewInfo{
 const NewsDetail = () => {
   const [postDetail, setPostDetail] = useState<NewInfo>({_id: "", title: "", duration: "", subtitle: "", body: "", _createdAt: ""});
   const [postDetailMore, setPostDetailMore] = useState<NewInfo[]>([]);
-  const [loading, setLoading] = useState(false);
   const {id} = useParams();
 
   const formatImage = (value: string) =>{    
@@ -45,16 +44,13 @@ const NewsDetail = () => {
     },
   }
 
-  useEffect(() => {
-    setLoading(true);
-    
+  useEffect(() => {    
     if(id){
       const getPostDetailquery = postDetailQuery(id);
     
       client.fetch(getPostDetailquery)
       .then((data) => {
         setPostDetail(data[0]);
-        setLoading(false);
       })
 
       const getMorePostquery = newsDetailMoreQuery(id);
@@ -62,7 +58,6 @@ const NewsDetail = () => {
       client.fetch(getMorePostquery)
       .then((data) => {
         setPostDetailMore(data);
-        setLoading(false);
       })
     }
     

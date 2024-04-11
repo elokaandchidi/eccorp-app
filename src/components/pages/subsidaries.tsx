@@ -5,7 +5,7 @@ import Navbar from "../reuseables/navbar";
 import BloomarketSiteImage from '../../assets/images/bloomarket_site.svg';
 import VyesociaSiteImage from '../../assets/images/vye_social_site.svg';
 import BloomarketLogo from '../../assets/images/bloo_market_logo.png';
-import EctcLogo from '../../assets/images/ectc_logo.svg';
+import EctcLogo from '../../assets/images/ectc.png';
 import bgImg from '../../assets/images/bg_home.png';
 
 const Subsidaries = () => {
