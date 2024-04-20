@@ -86,10 +86,10 @@ const Home = () => {
             About EC CORP
           </div>
           <div className='text-white lg:w-3/4'>
-            EC Corp. is a global technology company established by Eloka Amobi and Chidi Nlewedim in 2023. It is the parent company of ECTC LTD, bloo.market and Vye. EC Corp was created to reflect its expansion in IT consulting and technology products.
+            EC Corp is a global technology company established by Eloka Amobi and Chidi Nlewedim in 2023. It is the parent company of ECTC Ltd, bloo.market and vYe.  EC Corp was created to reflect its expansion into IT Consulting and technology products.
           </div>
           <div className='text-white lg:w-3/4'>
-            EC Corp. operates in United Kingdom and Europe, and recently commenced expansion into USA and Africa and Middle East, through its subsidiaries. EC Corp invests in numerous social impact programmes globally, such as partnering with Amobi Leadership, TechforNigeria and many other organisations.
+            EC Corp operates in United Kingdom, Europe, and recently commenced expansion into USA, Africa and Middle East, through its subsidiaries. EC Corp invests in numerous social impact programmes globally, such as partnering with Amobi Leadership School and Tech for Nigeria and many other organisations.
           </div>
           <div className='flex lg:justify-start justify-center lg:mt-5 mt-2'>
             <NavLink to='/about' className='border border-white p-3 lg:px-20 px-[3rem] text-white font-semibold lg:text-lg text-xs'>READ MORE</NavLink>
