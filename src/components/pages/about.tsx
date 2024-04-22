@@ -49,7 +49,7 @@ const About = () => {
                 Chidi Nlewedim (alias - Chase), is a tech entrepreneur with a passion for data and Artificial Intelligence (AI) and has been instrumental in driving EC Corp’s technological advancements and strategic direction, and has a background in pharmaceutical, finance and nuclear.
               </div>
             </div>
-            <img src={ImageEamon} className='object-contain h-[20rem]' alt="background"/>
+            <img src={ImageChidi} className='object-contain h-[20rem]' alt="background"/>
           </div>
         </div>
       </div>
