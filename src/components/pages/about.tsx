@@ -3,7 +3,7 @@ import Footer from "../reuseables/footer";
 import Navbar from "../reuseables/navbar";
 
 import ImageAbout from '../../assets/images/img_about.png';
-import ImageChidi from '../../assets/images/chidi.jpg';
+import ImageChidi from '../../assets/images/chidi.png';
 import ImageEamon from '../../assets/images/eamon.jpg';
 
 const About = () => {
