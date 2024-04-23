@@ -24,7 +24,7 @@ const Subsidaries = () => {
           <div className={`leading-relaxed text-white playfair-font lg:text-[3rem] text-2xl mt-5 font-bold text-center lg:w-1/3 w-4/6`}>
             Subsidiaries
           </div>
-          <div className='text-white lg:text-[1.25rem] text-[1rem] lg:w-full w-3/4 text-center'>Explore EC CORP's diverse range of subsidiaries, each specialising in unique areas to meet the evolving needs of our clients and communities..</div>
+          <div className='text-white lg:text-[1.25rem] text-[1rem] lg:w-full w-3/4 text-center'>Explore EC CORP's diverse range of subsidiaries, each specialising in unique areas to meet the evolving needs of our clients and communities.</div>
         </div>
       </div>
       <div className='flex flex-col gap-10 justify-between items-start w-full lg:px-[10rem] px-5'>
@@ -75,11 +75,11 @@ const Subsidaries = () => {
                 <div className='text-[3rem] text-white'>vYe</div>
               </div>
               <div className='text-white lg:text-xl text-sm leading-relaxed'>
-                Vye - Voice Your Experience is a social and political website, presented on a dynamic platform that fosters open dialogue, informed debate, and community engagement around pressing social and political issues. It serves as a hub for individuals, groups, and organizations to share their perspectives, voice their opinions, and collaborate on solutions to complex societal challenges.
+                vYe - Voice Your Experience is a social and political website, presented on a dynamic platform that fosters open dialogue, informed debate, and community engagement around pressing social and political issues. It serves as a hub for individuals, groups, and organizations to share their perspectives, voice their opinions, and collaborate on solutions to complex societal challenges.
               </div>
               <div className='flex flex-row justify-end items-center right-10 lg:absolute bottom-10 gap-8 mt-10'>
-                <a href="https://www.vye.social" target="_blank" rel="noreferrer" className='bg-[#B39659] p-4 px-10 text-white font-semibold lg:text-xl text-sm gap-2 tracking-wide uppercase flex flex-row items-center'>
-                  Go to Vye Social
+                <a href="https://www.vye.social" target="_blank" rel="noreferrer" className='bg-[#B39659] p-4 px-10 text-white font-semibold lg:text-xl text-sm gap-2 tracking-wide flex flex-row items-center'>
+                  GO TO vYe
                   <i className="fi fi-rr-angle-small-right mb-[-.3rem]"></i>
                 </a>
               </div>

@@ -37,7 +37,7 @@ const About = () => {
             <div className='flex flex-col lg:w-1/2'>
               <div className='text-[2rem] font-semibold mt-[-.6rem]'>Eloka</div>
               <div className='text-lg lg:mt-10 mt-5'>
-                Eloka Amobi (alias - Eamon) is a tech entrepreneur known for his strategic insight and innovative leadership, with a passion for technology product design and digital innovation. With his extensive experience in business, financial services, law and technology, has played a pivotal role in shaping EC Corp’s growth trajectory from its inception.
+                Eloka Amobi (alias - Eamon) is a tech entrepreneur known for his strategic insight and innovative leadership, with a passion for technology product design and digital innovation. With his extensive experience in financial services, law and technology, has played a pivotal role in shaping EC Corp’s growth trajectory from its inception.
               </div>
             </div>
           </div>
