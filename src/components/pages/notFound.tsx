@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import { client } from "../../utils/client";
-import { announcementQuery, newsDetailMoreQuery } from "../../utils/data";
+import { newsDetailMoreQuery } from "../../utils/data";
 
 import Footer from "../reuseables/footer";
 import Navbar from "../reuseables/navbar";
 
-export interface NewInfo{
+interface NewInfo{
   _id: string;
   title: string;
   subtitle: string;
@@ -20,7 +20,6 @@ export interface NewInfo{
 
 const NotFound = () => {
   const [postDetailMore, setPostDetailMore] = useState<NewInfo[]>([]);
-  const [announcementList, setAnnouncementList] = useState<NewInfo[]>([]);
 
   useEffect(() => {    
 
@@ -30,14 +29,6 @@ const NotFound = () => {
     .then((data) => {
       setPostDetailMore(data);
     })
-
-
-    const getAnnouncementQuery = announcementQuery();
-    
-    client.fetch(getAnnouncementQuery)
-    .then((data) => {    
-      setAnnouncementList(data);
-    })
     
   })
   
@@ -46,7 +37,7 @@ const NotFound = () => {
       <div className='w-full'>
         <Navbar/>
         <div className='flex flex-col w-full items-center px-5 lg:mt-[5rem] mt-10 lg:mb-20'>
-          <div className={`leading-relaxed text-white playfair-font lg:text-[3rem] text-2xl my-3 font-bold text-center`}>
+          <div className={`leading-relaxed text-white  lg:text-[3.5rem] text-2xl my-3 font-bold text-center`}>
             Oops! It looks like you've wandered off right path
           </div>
           <div className='text-white lg:text-lg text-sm lg:w-2/5 w-full text-center'>Oops! It seems you've stumbled upon a page that doesn't exist. Don't worry, it happens to the best of us. Here are a few things you can try:</div>
@@ -78,16 +69,16 @@ const NotFound = () => {
       </div>
 
       
-      <div className='flex lg:flex-row flex-col gap-5 justify-between items-start w-full lg:px-[10rem] px-5'>
+      <div className='flex lg:flex-row flex-col gap-5 justify-between items-start w-full lg:px-[20rem] px-5'>
         <div className='flex flex-col gap-3 lg:text-lg text-sm'>
-          <div className='text-white playfair-font text-center lg:text-[3rem] text-[1.7rem] leading-relaxed tracking-wider font-bold'>
+          <div className='text-white  text-center lg:text-[3rem] text-[1.7rem] leading-relaxed tracking-wider font-bold'>
             News
           </div>
           <div className='grid lg:grid-cols-3 lg:gap-[4rem] gap-5 lg:mt-10 mt-5'>
             {postDetailMore?.map((post) => (
               <div className='bg-[#383838]' key={post._id}>
                 <div className='flex flex-col gap-4 lg:p-10 p-5'>
-                  <div className='text-white playfair-font lg:text-[1.5rem] text-lg mb-3 font-bold line-clamp-2'>
+                  <div className='text-white  lg:text-[1.5rem] text-lg mb-3 font-bold line-clamp-2'>
                     {post?.title}
                   </div>
                   <div className='text-white lg:w-4/5 lg:text-lg text-sm line-clamp-5'>
@@ -96,7 +87,7 @@ const NotFound = () => {
                 </div>
 
                 <div className='flex flex-col items-center lg:gap-3 gap-1 border-t lg:py-5 py-3'>
-                  <NavLink to={`/news/${post?._id}`} className='text-[#B39659] lg:text-xl font-semibold gap-2 flex flex-row items-center'>
+                  <NavLink to={`/updates/${post?._id}`} className='text-[#B39659] lg:text-xl font-semibold gap-2 flex flex-row items-center'>
                     READ ARTICLE
                     <i className="fi fi-rr-angle-small-right mb-[-.3rem]"></i>
                   </NavLink>
@@ -109,50 +100,16 @@ const NotFound = () => {
             ))}
           </div>
           <div className={`${postDetailMore.length !== 0 ? 'hidden' : ''} w-full flex flex-col gap-3 items-center justify-center text-white my-[5rem]`}>
-            <div className='text-2xl playfair-font font-semibold mb-3'>No news found</div>
+            <div className='text-2xl  font-semibold mb-3'>No news found</div>
           </div>
           <div className='flex flex-col items-center gap-8 mt-10'>
-            <NavLink to={'/news'} className='bg-[#B39659] p-3 px-5 text-white font-semibold lg:text-xl text-sm gap-2 tracking-wider uppercase flex flex-row items-center'>
+            <NavLink to={'/updates'} className='bg-[#B39659] p-3 px-5 text-white font-semibold lg:text-xl text-sm gap-2 tracking-wider uppercase flex flex-row items-center'>
               View all articles
               <i className="fi fi-rr-angle-small-right mb-[-.3rem]"></i>
             </NavLink>
           </div>
         </div>
       </div>
-
-      <div className='flex flex-col items-center w-full lg:px-[10rem] px-5'>
-        <div className='text-white lg:text-[2rem] text-lg font-semibold playfair-font tracking-wide'>ANNOUNCEMENTS</div>
-        <div className='grid lg:grid-cols-3 lg:gap-[4rem] gap-5 lg:mt-10 mt-5'>
-          {announcementList.map((post: NewInfo) => (
-              <div className="bg-[#383838] flex flex-col items-center" key={post._id}>
-                <div className="flex flex-col items-center w-full gap-4 lg:p-10 p-5">
-                  <img src={post.mainImageUrl} alt={post.title} />
-                  <div className="flex flex-col items-center w-full gap-4">
-                    <div className="text-white playfair-font lg:text-[1.5rem] text-lg mb-3 font-bold line-clamp-2">
-                      {post?.title}
-                    </div>
-                    <div className="text-white lg:text-lg text-sm line-clamp-2">{post?.subtitle}</div>
-                  </div>
-                </div>
-      
-                <div className="flex flex-col w-full items-center lg:gap-3 gap-1 border-t lg:py-5 py-3">
-                  <NavLink to={`/news/${post?._id}`} className="text-[#B39659] lg:text-xl font-semibold gap-2 flex flex-row items-center">
-                    READ ARTICLE
-                    <i className="fi fi-rr-angle-small-right mb-[-.3rem]"></i>
-                  </NavLink>
-                  <div className="text-white lg:text-lg text-sm gap-2 flex flex-row items-center">
-                    <i className="fi fi-rr-hourglass-end mb-[-.3rem]"></i>
-                    {post?.duration} mins read
-                  </div>
-                </div>
-              </div>
-            ))}
-        </div>
-        <div className={`${announcementList.length !== 0 ? 'hidden' : ''} w-full flex flex-col gap-3 items-center justify-center text-white my-[5rem]`}>
-          <div className='text-2xl playfair-font font-semibold mb-3'>No announcement found</div>
-        </div>
-      </div>
-
         
       <Footer/>
     </div>

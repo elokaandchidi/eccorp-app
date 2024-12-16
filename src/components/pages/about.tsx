@@ -3,79 +3,66 @@ import Footer from "../reuseables/footer";
 import Navbar from "../reuseables/navbar";
 
 import ImageAbout from '../../assets/images/img_about.png';
-import ImageChidi from '../../assets/images/chidi.png';
-import ImageEamon from '../../assets/images/eamon.jpg';
+import { BsChevronRight } from "react-icons/bs";
+import { isMobile } from 'react-device-detect';
 
 const About = () => {
   
   return (
-    <div className='flex flex-col lg:gap-[5rem] gap-10 w-full'>
-      <div className='bg-about w-full'>
-        <Navbar/>
-        <div className='flex flex-row lg:justify-start justify-center playfair-font gap-2 w-full lg:px-[10rem] lg:text-lg text-white pt-10 lg:pt-[4rem]'>
-          <NavLink to='/'>
-            HOMEPAGE
-          </NavLink>/
-          <span className='font-semibold'>ABOUT</span>
-        </div>
-        <div className='flex flex-col gap-5 w-full items-center lg:mt-[5rem] lg:mb-[10rem] mb-20'>
-          <div className={`leading-relaxed text-white playfair-font lg:text-[3rem] text-2xl mt-5 font-bold text-center lg:w-1/3 w-4/6`}>
-            About EC CORP
+    <div className='flex flex-col items-center lg:gap-[5rem] gap-10 w-full'>
+      <div className='bg-about bg-black bg-opacity-60 flex flex-col items-center w-full'>
+        <div className='lg:w-9/12 w-11/12'>
+          <Navbar/>
+          <div className='flex flex-row lg:justify-start justify-center font-akshar gap-2 w-full lg:text-xl text-white pt-10 lg:pt-[4rem]'>
+            <NavLink className='text-[#B39659]' to='/'>
+              HOMEPAGE
+            </NavLink>/
+            <span className='font-semibold'>ABOUT</span>
           </div>
-          <div className='text-white lg:text-[1.25rem] text-[1rem] lg:w-full w-3/4 text-center'>Welcome to EC CORP, the visionary force behind the emergence of innovative enterprises.</div>
-        </div>
-      </div>
-      <div className='flex lg:flex-row flex-col gap-5 justify-between items-start w-full lg:px-[10rem] px-5'>
-        <div className='flex flex-col lg:w-2/5 gap-3 lg:text-lg text-sm'>
-          <div className='text-white playfair-font lg:text-[3rem] text-[1.7rem] tracking-wider text-left font-bold'>
-          Meet the Founders
+          <div className='flex flex-col gap-5 w-full items-center lg:mt-[5rem] mb-20'>
+            <div className={`leading-relaxed tracking-wider text-white lg:text-[3.5rem] text-2xl mt-5 font-bold text-center lg:w-1/3 w-4/6`}>
+              About ECCORP
+            </div>
           </div>
-        </div>
-        <div className='lg:w-3/5 flex flex-col gap-10 text-white items-end'>
-          <div className='flex lg:flex-row flex-col gap-10 lg:items-start justify-end'>
-            <img src={ImageEamon} className='object-contain h-[20rem]' alt="background"/>
-            <div className='flex flex-col lg:w-1/2'>
-              <div className='text-[2rem] font-semibold mt-[-.6rem]'>Eloka</div>
-              <div className='text-lg lg:mt-10 mt-5'>
-                Eloka Amobi (alias - Eamon) is a tech entrepreneur known for his strategic insight and innovative leadership, with a passion for technology product design and digital innovation. With his extensive experience in financial services, law and technology, has played a pivotal role in shaping EC Corp’s growth trajectory from its inception.
+          <div className='flex lg:flex-row flex-col lg:mt-[10rem] lg:gap-12 gap-5 justify-between items-start w-full'>
+            <div className='flex flex-col lg:w-3/12 gap-3 lg:text-lg text-sm'>
+              <div className='text-white  lg:text-[3rem] text-[1.7rem] leading-snug tracking-wider text-left font-bold'>
+                In business we are guided by these principles:
+              </div>
+            </div>
+            <div className='lg:w-4/5 flex flex-col gap-4 text-white'>
+              <div className='flex flex-col gap-4 lg:text-[2.5rem] text-[1.4rem] text-[#B39659] font-akshar font-semibold'>
+                <div>1. Innovation</div>
+                <div>2. Technology</div>
+                <div>3. Impact</div>
               </div>
             </div>
           </div>
-          <div className="border-t-2 border-[#B39659] w-full lg:w-5/6"></div>
-          <div className='flex lg:flex-row flex-col-reverse gap-10 lg:items-start justify-end'>
-            <div className='flex flex-col lg:w-1/2'>
-              <div className='text-[2rem] font-semibold'>Chidi</div>
-              <div className='text-lg lg:mt-10 mt-5'>
-                Chidi Nlewedim (alias - Chase), is a tech entrepreneur with a passion for data and Artificial Intelligence (AI) and has been instrumental in driving EC Corp’s technological advancements and strategic direction, and has a background in pharmaceutical, finance and nuclear.
-              </div>
-            </div>
-            <img src={ImageChidi} className='object-contain h-[20rem]' alt="background"/>
+        </div>
+      </div>
+      <div className='flex lg:flex-row flex-col lg:gap-12 gap-5 justify-end items-start lg:w-9/12 w-11/12'>
+        <div className={`${isMobile ? 'hidden' : ''} flex flex-col lg:w-3/12 gap-3 lg:text-lg text-sm`}>
+          &nbsp;
+        </div>
+        <div className='lg:w-4/5 font-akshar flex flex-col gap-4 text-white'>
+          <div className='text-xl leading-loose lg:mt-10 mt-5'>
+            <b>Innovation</b> - At ECCORP, innovation is at the core of everything we do. We thrive on pushing the boundaries of conventional thinking and constantly seek out new ways to solve complex problems. Our innovation stems from a combination of cutting-edge technologies, interdisciplinary collaboration, and a relentless pursuit of excellence. We foster a culture of creativity and experimentation, empowering our team to explore novel ideas and approaches. Through continuous research and development, we stay ahead of emerging trends and anticipate the needs of our clients. By harnessing the power of innovation, we deliver transformative solutions that drive tangible results and shape the future of technology.
+          </div>
+          <div className='text-xl leading-loose'>
+            <b>Technology</b> - Technology isn't just a tool; it's the cornerstone of our operations. We leverage the latest advancements in artificial intelligence, data analytics, and automation to drive efficiency and innovation. Our team utilizes state-of-the-art software platforms and custom-built solutions to streamline processes, enhance decision-making, and deliver unparalleled value to our clients. Whether it's implementing cloud-based infrastructure, developing bespoke software applications, or harnessing the power of IoT devices, we embrace technology at every step of the consulting journey. By staying at the forefront of technological evolution, we empower our clients to adapt, grow, and thrive in an ever-changing digital landscape.
+          </div>
+          <img src={ImageAbout} className='grayscale' alt="background"/>
+          <div className='text-xl leading-loose'>
+            <b>Impact</b> - We pride ourselves on making a significant impact on businesses across various industries. Through our tailored solutions and strategic guidance, we help organizations optimize their operations, maximize efficiency, and unlock new opportunities for growth. Whether it's implementing innovative technologies, optimizing processes, or providing expert advice on digital transformation initiatives, our team is dedicated to driving tangible results for our clients. By aligning our expertise with their unique goals and challenges, we enable businesses to stay competitive, adapt to market dynamics, and ultimately thrive in the digital age. Our commitment to excellence and client success ensures that the impact we make is not only significant but also sustainable in the long run.
           </div>
         </div>
       </div>
-      <div className='flex lg:flex-row flex-col gap-5 justify-between items-start w-full lg:px-[10rem] px-5'>
-        <div className='flex flex-col lg:w-2/5 gap-3 lg:text-lg text-sm'>
-          <div className='text-white playfair-font lg:text-[3rem] text-[1.7rem] leading-snug tracking-wider text-left font-bold'>
-            Empowering Innovations to Enrich  Lives
-          </div>
-          
-        </div>
-        <div className='lg:w-3/5 flex flex-col gap-4 text-white'>
-          <div className='flex flex-col gap-4 lg:text-[2.5rem] text-[1.4rem] playfair-font font-semibold'>
-            <div>1. Innovation</div>
-            <div>2. Technology</div>
-            <div>3. Impact</div>
-          </div>
-          <div className='text-lg lg:mt-10 mt-5'>
-            We believe that innovation is the lifeblood of any successful multinational corporation, and we leverage our subsidiaries worldwide to drive technological advancements. Through strategic partnerships and collaborations with local talent, we bring fresh perspectives and innovative ideas to the fore.
-          </div>
-          <div className='text-lg'>
-            We harness the power of technology through our subsidiaries, fostering a culture of innovation and collaboration across borders. Each subsidiary acts as a hub for technological expertise, developing and implementing cutting-edge solutions tailored to their specific market needs. By leveraging the strengths of each subsidiary and sharing best practices, we ensure that technology is at the core of our global operations, driving efficiency, and delivering value to our clients.
-          </div>
-          <img src={ImageAbout} alt="background"/>
-          <div className='text-lg'>
-            We leverage on technology to make a meaningful impact on people's lives. By developing innovative solutions tailored to local needs, we empower individuals and communities to thrive. Our recent expansion into Africa has resulted in the use of our technology to address pressing social and economic challenges, which has created positive change and a lasting impact in the communities we serve
-          </div>
+      <div className={`${isMobile ? 'bg-about-mobile' : 'bg-about2'} bg-cover bg-no-repeat grayscale w-full mb-10`}>
+        <div className='bg-[#191919] bg-opacity-70 h-[15rem] flex flex-col items-center justify-center'>
+          <NavLink to={"/professionals"} className='border border-white font-akshar tracking-wider flex flex-row gap-2 p-3 lg:px-[5rem] px-10 items-center text-white uppercase font-bold text-sm lg:text-xl'>
+            The Professionals
+            <BsChevronRight className="lg:text-[1.3rem]"/>
+          </NavLink>
         </div>
       </div>
       <Footer/>

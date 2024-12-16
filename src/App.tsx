@@ -1,19 +1,21 @@
-import { Routes, Route} from 'react-router-dom';
+import { Routes, Route, useLocation} from 'react-router-dom';
 
 import IndexRoutes from './containers/index';
-import { AlertProvider } from './utils/notification/alertcontext';
-import Alert from './utils/notification/alert';
+import { useEffect } from 'react';
 
 const App = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  
   return (
-    <AlertProvider>
-      <div className="App">
-        <Alert />
-        <Routes>
-          <Route path="/*" element={<IndexRoutes/>} />
-        </Routes>
-      </div>
-    </AlertProvider>
+    <div className="App ">
+      <Routes>
+        <Route path="/*" element={<IndexRoutes/>} />
+      </Routes>
+    </div>
   )
 }
 

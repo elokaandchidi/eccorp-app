@@ -4,6 +4,9 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    fontFamily: {
+      akshar: ["Akshar", "sans-serif"],
+    },
     extend: {},
     // colors: {
     //   'silver': '#79767D',
@@ -30,4 +33,3 @@ module.exports = {
   },
   plugins: [],
 }
-
