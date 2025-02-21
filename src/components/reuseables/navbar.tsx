@@ -15,30 +15,34 @@ const Navbar = () => {
         <NavLink  to='/'>
           <img src={logo} alt='logo' className='h-10'/>
         </NavLink>
-        <div className={`${isMobile ? 'hidden' : '' } flex flex-col text-lg text-white  justify-end`}>
-          <NavLink className={({ isActive }) => (isActive ? 'text-white tracking-wide text-right text-[1.2rem]' : 'text-[#B39659] tracking-wide text-right text-[1.2rem]')} to='/career'>
-            Careers
-          </NavLink>
-          <div className={`tracking-wide flex flex-row gap-[4rem] text-[1.4rem]  text-white items-center`}>
-            <NavLink to='/about' className={({ isActive }) => (isActive ? 'text-[#B39659]' : '')}>
-              ABOUT THE FIRM
+        <div className="hidden lg:block">
+          <div className={`flex flex-col text-lg text-white  justify-end`}>
+            <NavLink className={({ isActive }) => (isActive ? 'text-white tracking-wide text-right text-[1.2rem]' : 'text-[#B39659] tracking-wide text-right text-[1.2rem]')} to='/career'>
+              Careers
             </NavLink>
-            <NavLink to='/professionals' className={({ isActive }) => (isActive ? 'text-[#B39659]' : '')}>
-              PROFESSIONALS
-            </NavLink>
-            <NavLink to='/services' className={({ isActive }) => (isActive ? 'text-[#B39659]' : '')}>
-              SERVICE AREAS
-            </NavLink>
-            <NavLink to='/clients' className={({ isActive }) => (isActive ? 'text-[#B39659]' : '')}>
-              CLIENTS
-            </NavLink>
-            <NavLink to='/updates' className={({ isActive }) => (isActive ? 'text-[#B39659]' : '')}>
-              UPDATES
-            </NavLink>
+            <div className={`tracking-wide flex flex-row gap-[4rem] text-[1.4rem]  text-white items-center`}>
+              <NavLink to='/about' className={({ isActive }) => (isActive ? 'text-[#B39659]' : '')}>
+                ABOUT THE FIRM
+              </NavLink>
+              <NavLink to='/professionals' className={({ isActive }) => (isActive ? 'text-[#B39659]' : '')}>
+                PROFESSIONALS
+              </NavLink>
+              <NavLink to='/services' className={({ isActive }) => (isActive ? 'text-[#B39659]' : '')}>
+                SERVICE AREAS
+              </NavLink>
+              <NavLink to='/clients' className={({ isActive }) => (isActive ? 'text-[#B39659]' : '')}>
+                CLIENTS
+              </NavLink>
+              <NavLink to='/updates' className={({ isActive }) => (isActive ? 'text-[#B39659]' : '')}>
+                UPDATES
+              </NavLink>
+            </div>
           </div>
         </div>
-        <div className={`${isMobile ? '' : 'hidden' } flex flex-row gap-4 text-white items-center`}>
-          <i onClick={() => SetShowMenu(true)} className='fi fi-rr-menu-burger cursor-pointer'></i>
+        <div className="lg:hidden block">
+          <div className={`flex flex-row gap-4 text-white items-center`}>
+            <i onClick={() => SetShowMenu(true)} className='fi fi-rr-menu-burger cursor-pointer'></i>
+          </div>
         </div>
       </div>
       {showMenu && 
