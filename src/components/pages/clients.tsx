@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import { isMobile } from 'react-device-detect';
 import { LiaQuoteLeftSolid, LiaQuoteRightSolid } from "react-icons/lia";
 
 import Footer from "../reuseables/footer";
@@ -42,19 +41,23 @@ const Clients = () => {
           Previous Clients
           <div className='border-b border-[#B39659] w-1/12 pt-2'></div>
         </div>
-        <div className={`${isMobile ? 'hidden' : ''} flex lg:flex-row flex-col lg:gap-[4rem] w-full justify-between gap-5 lg:mt-10 mt-5`}>
-          <img src={clientImg} alt='logo' className='w-60 h-60 object-fit grayscale'/>
-          <img src={rollsroyceImg} alt='logo' className='w-60 h-60 object-contain grayscale'/>
-          <img src={discovery_bwImg} alt='logo' className='w-60 h-60 object-fit grayscale'/>
-          <img src={dftlogo_bwImg} alt='logo' className='w-60 h-60 object-contain grayscale'/>          
+        <div className="hidden lg:block">
+          <div className={`flex lg:flex-row flex-col lg:gap-[4rem] w-full justify-between gap-5 lg:mt-10 mt-5`}>
+            <img src={clientImg} alt='logo' className='w-60 h-60 object-fit grayscale'/>
+            <img src={rollsroyceImg} alt='logo' className='w-60 h-60 object-contain grayscale'/>
+            <img src={discovery_bwImg} alt='logo' className='w-60 h-60 object-fit grayscale'/>
+            <img src={dftlogo_bwImg} alt='logo' className='w-60 h-60 object-contain grayscale'/>          
+          </div>
         </div>
-        <div className={`${isMobile ? 'hidden' : ''} flex lg:flex-row flex-col lg:gap-[4rem] w-full justify-between gap-5 lg:mt-10 mt-5`}>
-          <img src={dhsclogo_bwImg} alt='logo' className='w-60 h-60 object-contain grayscale' />
-          <img src={airfrance_bwImg} alt='logo' className='w-60 h-60 object-contain grayscale' />
-          <img src={LloydsBankLogo_bwImg} alt='logo' className='w-60 h-60 object-contain grayscale' />
-          <img src={barclays_logo_bwImg} alt='logo' className='w-60 h-60 object-contain grayscale' />          
+        <div className="hidden lg:block">
+          <div className={`flex lg:flex-row flex-col lg:gap-[4rem] w-full justify-between gap-5 lg:mt-10 mt-5`}>
+            <img src={dhsclogo_bwImg} alt='logo' className='w-60 h-60 object-contain grayscale' />
+            <img src={airfrance_bwImg} alt='logo' className='w-60 h-60 object-contain grayscale' />
+            <img src={LloydsBankLogo_bwImg} alt='logo' className='w-60 h-60 object-contain grayscale' />
+            <img src={barclays_logo_bwImg} alt='logo' className='w-60 h-60 object-contain grayscale' />          
+          </div>
         </div>
-        <div className={`${isMobile ? '' : 'hidden'} grid grid-cols-2 lg:gap-[4rem] w-full justify-center items-center gap-5 lg:mt-10 mt-5`}>
+        <div className={`lg:hidden grid grid-cols-2 lg:gap-[4rem] w-full justify-center items-center gap-5 lg:mt-10 mt-5`}>
           <img src={rollsroyceImg} alt='logo' className='h-25 object-contain grayscale'/>
           <img src={clientImg} alt='logo' className='h-25 object-fit grayscale'/>
           <img src={discovery_bwImg} alt='logo' className='h-25 object-fit grayscale'/>

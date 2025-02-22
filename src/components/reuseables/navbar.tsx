@@ -1,5 +1,4 @@
 import { NavLink } from 'react-router-dom';
-import { isMobile } from 'react-device-detect';
 
 import logo from '../../assets/images/logo.png';
 import { useState } from 'react';
@@ -20,7 +19,7 @@ const Navbar = () => {
             <NavLink className={({ isActive }) => (isActive ? 'text-white tracking-wide text-right text-[1.2rem]' : 'text-[#B39659] tracking-wide text-right text-[1.2rem]')} to='/career'>
               Careers
             </NavLink>
-            <div className={`tracking-wide flex flex-row gap-[4rem] text-[1.4rem]  text-white items-center`}>
+            <div className={`tracking-wide flex flex-row gap-[4rem] text-[1.2rem] text-white items-center`}>
               <NavLink to='/about' className={({ isActive }) => (isActive ? 'text-[#B39659]' : '')}>
                 ABOUT THE FIRM
               </NavLink>

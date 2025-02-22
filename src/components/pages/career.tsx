@@ -3,7 +3,6 @@ import Footer from "../reuseables/footer";
 import Navbar from "../reuseables/navbar";
 
 import { BsChevronRight } from "react-icons/bs";
-import { isMobile } from 'react-device-detect';
 import { AiOutlineMail } from "react-icons/ai";
 
 const Career = () => {
@@ -47,7 +46,7 @@ const Career = () => {
           </div>
         </div>
       </div>
-      <div className={`${isMobile ? 'bg-about-mobile' : 'bg-about2'} bg-cover bg-no-repeat w-full grayscale mb-10`}>
+      <div className={`sm:bg-about-mobile bg-about2 bg-cover bg-no-repeat w-full grayscale mb-10`}>
         <div className='bg-[#191919] bg-opacity-70 h-[15rem] flex flex-col items-center justify-center'>
           <NavLink to={"/professionals"} className='border border-white font-akshar tracking-wider flex flex-row gap-2 p-3 lg:px-[5rem] px-10 items-center text-white uppercase font-bold text-sm lg:text-xl'>
             The Professionals

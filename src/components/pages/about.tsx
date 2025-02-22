@@ -4,7 +4,6 @@ import Navbar from "../reuseables/navbar";
 
 import ImageAbout from '../../assets/images/img_about.png';
 import { BsChevronRight } from "react-icons/bs";
-import { isMobile } from 'react-device-detect';
 
 const About = () => {
   
@@ -41,11 +40,11 @@ const About = () => {
         </div>
       </div>
       <div className='flex lg:flex-row flex-col lg:gap-12 gap-5 justify-end items-start lg:w-9/12 w-11/12'>
-        <div className={`${isMobile ? 'hidden' : ''} flex flex-col lg:w-3/12 gap-3 lg:text-lg text-sm`}>
+        <div className={`sm:hidden flex flex-col lg:w-3/12 gap-3 lg:text-lg text-sm`}>
           &nbsp;
         </div>
         <div className='lg:w-4/5 font-akshar flex flex-col gap-4 text-white'>
-          <div className='text-xl leading-loose lg:mt-10 mt-5'>
+          <div className='text-xl leading-loose mt-5'>
             <b>Innovation</b> - At ECCORP, innovation is at the core of everything we do. We thrive on pushing the boundaries of conventional thinking and constantly seek out new ways to solve complex problems. Our innovation stems from a combination of cutting-edge technologies, interdisciplinary collaboration, and a relentless pursuit of excellence. We foster a culture of creativity and experimentation, empowering our team to explore novel ideas and approaches. Through continuous research and development, we stay ahead of emerging trends and anticipate the needs of our clients. By harnessing the power of innovation, we deliver transformative solutions that drive tangible results and shape the future of technology.
           </div>
           <div className='text-xl leading-loose'>
@@ -57,7 +56,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className={`${isMobile ? 'bg-about-mobile' : 'bg-about2'} bg-cover bg-no-repeat grayscale w-full mb-10`}>
+      <div className={`sm:bg-about-mobile bg-about2 bg-cover bg-no-repeat grayscale w-full mb-10`}>
         <div className='bg-[#191919] bg-opacity-70 h-[15rem] flex flex-col items-center justify-center'>
           <NavLink to={"/professionals"} className='border border-white font-akshar tracking-wider flex flex-row gap-2 p-3 lg:px-[5rem] px-10 items-center text-white uppercase font-bold text-sm lg:text-xl'>
             The Professionals

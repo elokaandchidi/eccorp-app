@@ -13,7 +13,6 @@ import bgImg from '../../assets/images/bg_img_home2.svg';
 import ImageEamon from '../../assets/images/eamon.jpg';
 import ImageChidi from '../../assets/images/chidi.png';
 import ImageEddy from '../../assets/images/eddy.jpg';
-import { isMobile } from "react-device-detect";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaAsterisk } from "react-icons/fa6";
 import Disclaimer from "../reuseables/disclaimer";
@@ -115,7 +114,7 @@ const Home = () => {
         <div className='lg:w-9/12 w-11/12'>
           <Navbar/>
           <div className='flex flex-col lg:gap-10 gap-8 w-full items-start lg:my-[7rem] mb-10'>
-            <div className={`${isMobile ? 'flex-col mt-5' : 'flex-row mt-[10rem]'} flex lg:gap-10 gap-8 w-full items-start justify-between`}>
+            <div className={`flex flex-col mt-5 lg:flex-row lg:mt-[10rem] lg:gap-10 gap-8 w-full items-start justify-between`}>
               <div className={`flex flex-col lg:w-2/3 lg:gap-12 text-white leading-relaxed tracking-widest lg:text-[3.5rem] text-3xl font-bold`}>
                 <div>Integrating Profound Technological <br/> Experience with Advanced Business Insight.</div>
               </div>
@@ -126,7 +125,7 @@ const Home = () => {
                 LED BY
                 <div className='border-b border-[#B39659] pt-2'></div>
               </div>
-              <div className={`${isMobile ? 'flex-col gap-3' : 'flex-row gap-7'} flex`}>
+              <div className={`flex flex-col lg:flex-row gap-3 lg:gap-7`}>
                 <div className='flex flex-row gap-3 items-center'>
                   <img src={ImageEddy} alt='logo' className='w-20 h-20 object-cover rounded-full grayscale' />
                   <div className='text-white lg:text-[1.5rem] text-[1.2rem] leading-tight tracking-wide'>Eddy Jawed, <br/> Chief Executive Officer</div>
@@ -140,7 +139,7 @@ const Home = () => {
                   <div className='text-white lg:text-[1.5rem] text-[1.2rem] leading-tight tracking-wide'>Eloka Amobi,<br/> Founder/Chief Product Officer</div>
                 </div>
                 <NavLink to='/professionals' className='flex flex-row gap-2 items-center'>
-                  <div  className={`${isMobile ? '' : 'hidden'} text-[#B39659] font-semibold`}>VIEW</div>
+                  <div className={`lg:hidden block text-[#B39659] font-semibold`}>VIEW</div>
                   <BsChevronRight className="lg:text-[2rem] lg:mt-1 text-[#B39659]"/>
                 </NavLink>
               </div>
@@ -188,7 +187,7 @@ const Home = () => {
         </div>
       </div>
       <div className='flex flex-row lg:w-9/12 w-11/12 gap-[4rem] pt-5'>
-        <img src={bgImg} alt='logo' className={`${isMobile ? 'hidden' : ''} grayscale w-1/3`} />
+        <img src={bgImg} alt='logo' className={`hidden lg:block grayscale w-1/3`} />
         <div className='flex flex-col lg:w-3/5 w-full'>
           <div className='text-white lg:text-[1.5rem] w-1/2 text-lg font-semibold  tracking-wide'>
             ENQUIRE

@@ -7,7 +7,6 @@ import { newsDetailMoreQuery } from "../../utils/data";
 import { client } from "../../utils/client";
 
 import { AiOutlineMail } from "react-icons/ai";
-import { isMobile } from "react-device-detect";
 import { serviceList } from "../../utils/service";
 
 import Footer from "../reuseables/footer";
@@ -56,8 +55,8 @@ const ServiceDetail = () => {
         </div>
       </div>
 
-      <div className={`${isMobile ? 'flex-col items-center' : 'flex-row items-start'} flex lg:w-9/12 w-11/12 lg:mt-[-25rem] mt-[-10rem]`}>
-        <div className={`${isMobile ? 'hidden' : ''} font-akshar flex flex-col lg:w-1/5 gap-3 lg:items-start items-center w-3/4`}>
+      <div className={`max-md:flex-col max-md:items-center lg:flex-row lg:items-start flex lg:w-9/12 w-11/12 lg:mt-[-25rem] mt-[-10rem]`}>
+        <div className={`max-md:hidden font-akshar flex flex-col lg:w-1/5 gap-3 lg:items-start items-center w-3/4`}>
           <div className='text-white lg:text-[1.5rem] w-1/2 text-lg font-medium  tracking-wide'>
             CONTACT US
             <div className='border-b-2 border-[#B39659] w-4/12 pt-3'></div>
@@ -85,7 +84,7 @@ const ServiceDetail = () => {
           </div>
           {serviceInfo?.title === 'Data Analytics & Management' && 
             <span className='flex w-full'>
-              <a target='_blank' rel="noreferrer" href='https://www.eccorp.ltd/' className='bg-[#B39659] p-3 px-10 text-white font-semibold lg:text-xl text-sm gap-2 tracking-wider uppercase flex flex-row items-center cursor-pointer'>Click here to contact the Data Pages</a>
+              <a target='_blank' rel="noreferrer" href='https://www.eccorp.co/' className='bg-[#B39659] p-3 px-10 text-white font-semibold lg:text-xl text-sm gap-2 tracking-wider uppercase flex flex-row items-center cursor-pointer'>Click here to contact the Data Pages</a>
             </span>
           }
         </div>

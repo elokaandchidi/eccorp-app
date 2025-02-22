@@ -2,7 +2,6 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaAsterisk } from "react-icons/fa6";
 import { AiOutlineMail } from "react-icons/ai";
-import { isMobile } from "react-device-detect";
 
 import Navbar from "../reuseables/navbar";
 import Footer from "../reuseables/footer";
@@ -93,7 +92,7 @@ const Contact = () => {
             </NavLink>/
             <div className='font-semibold uppercase'>Contact Us</div>
           </div>
-          <div className={`${isMobile ? '' : 'hidden'} flex flex-col w-full items-center lg:mt-[5rem] lg:mb-[20rem] mb-[10rem]`}>
+          <div className={`lg:hidden flex flex-col w-full items-center lg:mt-[5rem] lg:mb-[20rem] mb-[10rem]`}>
             <div className={`tracking-wider text-white lg:text-[3rem] text-3xl my-5 font-bold text-center lg:w-1/3 w-4/6`}>
               Contact Us
             </div>
@@ -101,7 +100,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className={`${isMobile ? 'flex-col' : 'flex-row items-start'} flex lg:w-9/12 w-11/12 lg:mt-[-25rem] mt-[-10rem]`}>
+      <div className={`sm:flex-col lg:flex-row lg:items-start flex lg:w-9/12 w-11/12 lg:mt-[-25rem] mt-[-10rem]`}>
         <div className={`flex flex-col lg:w-1/4 gap-3 items-start pt-1 w-3/4`}>
           <div className='text-white lg:text-[1.7rem] font-akshar w-1/2 text-lg font-medium  tracking-wide'>
             ENQUIRE
@@ -114,7 +113,7 @@ const Contact = () => {
         </div>
         
         <div className='flex flex-col lg:w-3/5 justify-between gap-5 lg:mt-0 mt-5 text-white'>
-          <div className={`${isMobile ? 'hidden' : ''} font-semibold tracking-wider lg:text-[3rem] text-[1.4rem] capitalize text-center `}>contact us</div>
+          <div className={`max-sm:hidden block font-semibold tracking-wider lg:text-[3rem] text-[1.4rem] capitalize text-center `}>contact us</div>
           
           <div className='flex flex-col gap-6 lg:mt-20 w-full text-white'>
           <div className='grid lg:grid-cols-2 grid-cols-1 font-akshar gap-5 items-center'>
