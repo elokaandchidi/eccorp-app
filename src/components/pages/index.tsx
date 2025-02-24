@@ -121,7 +121,7 @@ const Home = () => {
               <NavLink to='/contact' className='border border-white lg:mt-4 p-3 px-10 text-white tracking-wide font-akshar uppercase font-semibold text-sm lg:text-xl'>Contact us</NavLink>
             </div>
             <div className='flex flex-col w-full items-start lg:mt-20 lg:gap-8 gap-6'>
-              <div className='text-white font-akshar text-[1.3rem]'>
+              <div className='text-white text-[1.3rem]'>
                 LED BY
                 <div className='border-b border-[#B39659] pt-2'></div>
               </div>
@@ -148,7 +148,7 @@ const Home = () => {
         </div>
       </div>
       <div className='flex flex-col lg:items-center lg:w-9/12 w-11/12 pt-5'>
-        <div className='text-white lg:text-[2rem] font-akshar text-lg font-semibold tracking-wider'>
+        <div className='text-white lg:text-[2rem]  text-lg font-semibold tracking-wider'>
           UPDATES
           <div className='border-b-2 border-[#B39659] lg:w-1/3 w-2/12 pt-3'></div>
         </div>
@@ -159,13 +159,13 @@ const Home = () => {
                 <div className='text-white lg:text-[1.5rem] text-lg mb-3 font-bold line-clamp-2'>
                   {post?.title}
                 </div>
-                <div className='text-white lg:text-lg text-sm font-akshar leading-relaxed line-clamp-5'>
+                <div className='text-white lg:text-lg text-sm  leading-relaxed line-clamp-5'>
                   {post?.subtitle}
                 </div>
               </div>
 
               <div className='flex flex-col items-center lg:gap-3 gap-1 border-t lg:py-5 py-3'>
-                <NavLink to={`/updates/${post?._id}`} className='font-akshar text-[#B39659] lg:text-xl font-semibold gap-2 flex flex-row items-center'>
+                <NavLink to={`/updates/${post?._id}`} className='text-[#B39659] lg:text-xl font-semibold gap-2 flex flex-row items-center'>
                   READ ARTICLE
                   <i className="fi fi-rr-angle-small-right mb-[-.3rem]"></i>
                 </NavLink>
@@ -177,11 +177,11 @@ const Home = () => {
             </div>
           ))}
         </div>
-        <div className={`${newsList.length !== 0 ? 'hidden' : ''} w-full flex flex-col gap-3 font-akshar items-center justify-center text-white my-[5rem]`}>
+        <div className={`${newsList.length !== 0 ? 'hidden' : ''} w-full flex flex-col gap-3  items-center justify-center text-white my-[5rem]`}>
           <div className='text-2xl font-semibold mb-3'>No news found</div>
         </div>
         <div className='flex flex-row w-full justify-center items-center gap-8 mt-10'>
-          <NavLink to={'/updates'} className='bg-[#B39659] font-akshar p-3 px-5 text-white font-semibold lg:text-xl text-sm gap-2 tracking-wider uppercase flex flex-row items-center'>
+          <NavLink to={'/updates'} className='bg-[#B39659]  p-3 px-5 text-white font-semibold lg:text-xl text-sm gap-2 tracking-wider uppercase flex flex-row items-center'>
             View all updates
           </NavLink>
         </div>
@@ -193,12 +193,9 @@ const Home = () => {
             ENQUIRE
             <div className='border-b-2 border-[#B39659] lg:w-1/12 w-3/12 pt-3'></div>
           </div>
-          <div className='flex flex-row gap-3 lg:text-lg mt-3 items-center text-[#D1D0CF]'>
-            <AiOutlineMail />
-            <div className='underline'>info@eccorp.ltd</div>
-          </div>
+          
           <div className='flex flex-col gap-6 mt-5 w-full text-white'>
-            <div className='grid lg:grid-cols-2 grid-cols-1 font-akshar gap-5 items-center'>
+            <div className='grid lg:grid-cols-2 grid-cols-1  gap-5 items-center'>
               <div className='flex flex-col'>
                 <input value={formInfo.name} onChange={({ target}) => {setFormInfo({ ...formInfo, name: target.value })}} className='bg-transparent outline-none text-white placeholder:text-white border-b-2 border-[#B39659] py-5 px-3' placeholder='Name *' type='text'/>
               </div>
@@ -206,15 +203,15 @@ const Home = () => {
                 <input value={formInfo.email} onChange={({ target}) => {setFormInfo({ ...formInfo, email: target.value })}} className='bg-transparent outline-none text-white placeholder:text-white border-b-2 border-[#B39659] py-5 px-3' placeholder='Email *' type='email'/>
               </div>
             </div>
-            <div className='grid lg:grid-cols-2 grid-cols-1 font-akshar gap-4 items-center'>
+            <div className='grid lg:grid-cols-2 grid-cols-1  gap-4 items-center'>
               <div className='flex flex-col'>
                 <input value={formInfo.phone} onChange={({ target}) => {setFormInfo({ ...formInfo, phone: target.value })}} className='bg-transparent outline-none text-white placeholder:text-white border-b-2 border-[#B39659] py-5 px-3' placeholder='Phone *' type='text'/>
               </div>
             </div>
-            <div className='flex flex-col font-akshar'>
+            <div className='flex flex-col '>
               <textarea value={formInfo.message} onChange={({ target}) => {setFormInfo({ ...formInfo, message: target.value })}} className='bg-transparent outline-none text-white placeholder:text-white border-b-2 border-[#B39659] py-5 px-3' placeholder='Message *'/>
             </div>
-            <div className='flex flex-col font-akshar lg:items-start items-center mt-7 w-full'>
+            <div className='flex flex-col  lg:items-start items-center mt-7 w-full'>
               <div onClick={handleSubmit} className='lg:w-1/3 w-1/2 border border-white p-3 cursor-pointer text-center text-white uppercase font-semibold text-sm lg:text-xl'>{!isSubmitting ? 'SUBMIT' : 'Submitting ....'}</div>
             </div>
             <div onClick={() => setHandleDisclaimerPopUp(!handleDisclaimerPopUp)} className='flex flex-row gap-3 lg:mt-9 mt-4 lg:mb-0 mb-14 items-center cursor-pointer'>

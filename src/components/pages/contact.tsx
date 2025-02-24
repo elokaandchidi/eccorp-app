@@ -106,10 +106,6 @@ const Contact = () => {
             ENQUIRE
             <div className='border-b-2 border-[#B39659] w-4/12 pt-3'></div>
           </div>
-          <div className='flex flex-row gap-3 lg:text-lg lg:mt-14 mt-7 items-center text-[#D1D0CF]'>
-            <AiOutlineMail />
-            <div className='underline'>info@eccorp.ltd</div>
-          </div>
         </div>
         
         <div className='flex flex-col lg:w-3/5 justify-between gap-5 lg:mt-0 mt-5 text-white'>

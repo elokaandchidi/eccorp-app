@@ -38,14 +38,14 @@ const Services = () => {
       <div className='bg-services bg-black bg-opacity-60 flex flex-col items-center w-full'>
         <div className='lg:w-9/12 w-11/12'>
           <Navbar/>
-          <div className='flex flex-row font-akshar lg:justify-start justify-center  gap-2 w-full lg:text-xl text-white pt-10 lg:pt-[4rem]'>
+          <div className='flex flex-row lg:justify-start justify-center  gap-2 w-full lg:text-xl text-white pt-10 lg:pt-[4rem]'>
             <NavLink className='text-[#B39659]' to='/'>
               HOMEPAGE
             </NavLink>/
             <span className='font-semibold uppercase'>Services</span>
           </div>
           <div className='flex flex-col w-full items-center lg:mt-[5rem] lg:mb-[25rem] mb-[10rem]'>
-            <div className={`tracking-wider text-white lg:text-[3.5rem] text-2xl my-5 font-bold text-center lg:w-1/3 w-4/6`}>
+            <div className={`tracking-wider text-white lg:text-[3.5rem] text-2xl my-5 font-bold text-center`}>
               Service Areas
             </div>
           </div>
@@ -61,7 +61,7 @@ const Services = () => {
                 <FaPlus className={`${selected !== service.id? '' : 'hidden'} text-[#B39659] text-lg lg:text-[1.5rem]`}/>
                 <FaMinus className={`${selected === service.id? '' : 'hidden'} text-[#B39659] text-lg lg:text-[1.5rem]`}/>
               </div>
-              <div className={`${selected === service.id? '' : 'hidden'} pb-4 w-full font-akshar`}>
+              <div className={`${selected === service.id? '' : 'hidden'} pb-4 w-full`}>
                 <div className={`w-full line-clamp-3 lg:text-[1.4rem] text-lg`}>
                   {service.subtitle}
                 </div>
@@ -74,7 +74,7 @@ const Services = () => {
         </div>
       </div>
       <div className='flex flex-col lg:items-center lg:w-9/12 w-11/12 pt-5'>
-        <div className='text-white lg:text-[2rem] font-akshar text-xl font-semibold tracking-wider'>
+        <div className='text-white lg:text-[2rem] text-xl font-semibold tracking-wider'>
           UPDATES
           <div className='border-b-2 border-[#B39659] lg:w-1/3 w-2/12 pt-3'></div>
         </div>
@@ -85,13 +85,13 @@ const Services = () => {
                 <div className='text-white lg:text-[1.5rem] text-lg mb-3 font-bold line-clamp-2'>
                   {post?.title}
                 </div>
-                <div className='text-white lg:text-lg text-sm font-akshar leading-relaxed line-clamp-5'>
+                <div className='text-white lg:text-lg text-sm leading-relaxed line-clamp-5'>
                   {post?.subtitle}
                 </div>
               </div>
 
               <div className='flex flex-col items-center lg:gap-3 gap-1 border-t lg:py-5 py-3'>
-                <NavLink to={`/updates/${post?._id}`} className='font-akshar text-[#B39659] lg:text-xl font-semibold gap-2 flex flex-row items-center'>
+                <NavLink to={`/updates/${post?._id}`} className='text-[#B39659] lg:text-xl font-semibold gap-2 flex flex-row items-center'>
                   READ ARTICLE
                   <i className="fi fi-rr-angle-small-right mb-[-.3rem]"></i>
                 </NavLink>
@@ -104,10 +104,10 @@ const Services = () => {
           ))}
         </div>
         <div className={`${newsList.length !== 0 ? 'hidden' : ''} w-full flex flex-col gap-3 items-center justify-center text-white my-[5rem]`}>
-          <div className='text-2xl font-akshar font-semibold mb-3'>No news found</div>
+          <div className='text-2xl font-semibold mb-3'>No news found</div>
         </div>
         <div className='flex flex-row w-full justify-center items-center gap-8 mt-10'>
-          <NavLink to={'/updates'} className='border border-white font-akshar p-3 px-5 lg:px-10 text-white font-semibold lg:text-lg text-sm gap-2 tracking-wider uppercase flex flex-row items-center'>
+          <NavLink to={'/updates'} className='border border-white p-3 px-5 lg:px-10 text-white font-semibold lg:text-lg text-sm gap-2 tracking-wider uppercase flex flex-row items-center'>
             Read More
           </NavLink>
         </div>

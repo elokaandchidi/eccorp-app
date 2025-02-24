@@ -21,7 +21,7 @@ const Clients = () => {
       <div className='bg-client bg-black bg-opacity-60 flex flex-col items-center w-full'>
         <div className='h-full lg:w-9/12 w-11/12'>
           <Navbar/>
-          <div className='flex flex-row font-akshar lg:justify-start justify-center gap-2 w-full lg:text-xl text-white pt-10 lg:pt-[4rem]'>
+          <div className='flex flex-row lg:justify-start justify-center gap-2 w-full lg:text-xl text-white pt-10 lg:pt-[4rem]'>
             <NavLink className='text-[#B39659]' to='/'>
               HOMEPAGE
             </NavLink>/
@@ -37,7 +37,7 @@ const Clients = () => {
       </div>
 
       <div className='flex flex-col lg:w-9/12 w-11/12 lg:mt-[-17rem] mt-[-10rem]'>
-        <div className='text-white 2xl:w-1/5 lg:w-2/5 lg:text-[2rem] font-akshar uppercase text-2xl'>
+        <div className='text-white 2xl:w-1/5 lg:w-2/5 lg:text-[2rem]  uppercase text-2xl'>
           Previous Clients
           <div className='border-b border-[#B39659] w-1/12 pt-2'></div>
         </div>
@@ -70,40 +70,40 @@ const Clients = () => {
       </div>
 
       <div className='flex flex-col lg:w-9/12 w-11/12 mt-16 lg:mb-36 mb-10'>
-        <div className='text-white font-akshar 2xl:w-1/5 lg:w-2/5 lg:text-[2rem] uppercase text-2xl'>
+        <div className='text-white  2xl:w-1/5 lg:w-2/5 lg:text-[2rem] uppercase text-2xl'>
           What our clients say
           <div className='border-b border-[#B39659] w-2/12 pt-2'></div>
         </div>
         <div className='grid lg:grid-cols-3 lg:gap-[4rem] w-full justify-between gap-5 lg:mt-10 mt-5'>
           <div className='bg-[#383838] p-5 text-white flex flex-col gap-4 items-center'>
             <LiaQuoteLeftSolid className='text-[#B39659] text-[2rem]'/>
-            <div className='text-center text-lg font-akshar'>
+            <div className='text-center text-lg '>
               We have seen our organizational profitability increase significantly thanks in large part to ECCORP’s digital transformation and data analytics
             </div>
             <LiaQuoteRightSolid className='text-[#B39659] text-[2rem]'/>
 
             <div className='font-semibold tracking-wider text-xl'>Barclays</div>
-            <div className='font-akshar'>Richard</div>
+            <div className=''>Richard</div>
           </div>  
           <div className='bg-[#383838] p-5 text-white flex flex-col gap-4 items-center'>
             <LiaQuoteLeftSolid className='text-[#B39659] text-[2rem]'/>
-            <div className='text-center text-lg font-akshar'>
+            <div className='text-center text-lg '>
               ECCORP’s expertise in designing and building a website is unmatched
             </div>
             <LiaQuoteRightSolid className='text-[#B39659] text-[2rem]'/>
 
             <div className='font-semibold tracking-wider text-xl'>Profitero</div>
-            <div className='font-akshar'>Hannah</div>
+            <div className=''>Hannah</div>
           </div>  
           <div className='bg-[#383838] p-5 text-white flex flex-col gap-4 items-center'>
             <LiaQuoteLeftSolid className='text-[#B39659] text-[2rem]'/>
-            <div className='text-center text-lg font-akshar'>
+            <div className='text-center text-lg '>
               I have no hesitation in recommending ECCORP for technology proficiency and capability
             </div>
             <LiaQuoteRightSolid className='text-[#B39659] text-[2rem]'/>
 
             <div className='font-semibold tracking-wider text-xl'>Rolls Royce</div>
-            <div className='font-akshar'>Gavin</div>
+            <div className=''>Gavin</div>
           </div>  
         </div>
       </div>

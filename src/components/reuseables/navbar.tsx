@@ -9,14 +9,14 @@ const Navbar = () => {
 
 
   return (
-    <div className='flex flex-col w-full font-akshar relative'>
+    <div className='flex flex-col w-full relative'>
       <div className='flex flex-row justify-between items-center w-full lg:py-5 py-3'>
         <NavLink  to='/'>
           <img src={logo} alt='logo' className='h-10'/>
         </NavLink>
         <div className="hidden lg:block">
-          <div className={`flex flex-col text-lg text-white  justify-end`}>
-            <NavLink className={({ isActive }) => (isActive ? 'text-white tracking-wide text-right text-[1.2rem]' : 'text-[#B39659] tracking-wide text-right text-[1.2rem]')} to='/career'>
+          <div className={`flex flex-col text-lg text-white justify-end`}>
+            <NavLink className={({ isActive }) => (isActive ? 'text-white tracking-wide text-right text-[1.2rem]' : 'text-[#B39659] tracking-wide text-right text-[1.2rem] w-auto')} to='/career'>
               Careers
             </NavLink>
             <div className={`tracking-wide flex flex-row gap-[4rem] text-[1.2rem] text-white items-center`}>

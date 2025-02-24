@@ -12,7 +12,7 @@ const Career = () => {
       <div className='bg-professionals bg-black bg-opacity-60 flex flex-col items-center w-full'>
         <div className='h-full lg:w-9/12 w-11/12'>
           <Navbar/>
-          <div className='flex flex-row font-akshar lg:justify-start justify-center  gap-2 w-full lg:text-xl text-white pt-10 lg:pt-[4rem]'>
+          <div className='flex flex-row  lg:justify-start justify-center  gap-2 w-full lg:text-xl text-white pt-10 lg:pt-[4rem]'>
             <NavLink className='text-[#B39659]' to='/'>
               HOMEPAGE
             </NavLink>/
@@ -29,7 +29,7 @@ const Career = () => {
                 Committed to providing the highest quality to our clients.
               </div>
             </div>
-            <div className='lg:w-3/5 flex flex-col font-akshar lg:mt-0 mt-20 gap-4 text-lg text-white'>
+            <div className='lg:w-3/5 flex flex-col  lg:mt-0 mt-20 gap-4 text-lg text-white'>
               <div className='leading-relaxed'>ECCORP LTD is committed to providing and delivering the highest quality of technology consulting service to its clients, which means hiring elite consultants capable of delivering extraordinary results. We seek individuals who are committed to maintaining our record of excellence and upholding our impeccable reputation. Although we infrequently hire new consultants and we are extremely selective in our hiring decisions, we are always looking for the next great contributor to the team</div>
               <div className='text-white w-1/2 lg:text-lg text-sm font-semibold  tracking-wide'>
                 HOW TO APPLY
@@ -39,7 +39,7 @@ const Career = () => {
                 Submit a CV and cover letter to 
                 <div className='flex flex-row gap-3 lg:text-lg items-center text-[#D1D0CF]'>
                   <AiOutlineMail />
-                  <div className='underline'>info@eccorp.ltd</div>
+                  <div className='underline'>“info@ectc</div>
                 </div>
               </div>
             </div>
@@ -48,7 +48,7 @@ const Career = () => {
       </div>
       <div className={`sm:bg-about-mobile bg-about2 bg-cover bg-no-repeat w-full grayscale mb-10`}>
         <div className='bg-[#191919] bg-opacity-70 h-[15rem] flex flex-col items-center justify-center'>
-          <NavLink to={"/professionals"} className='border border-white font-akshar tracking-wider flex flex-row gap-2 p-3 lg:px-[5rem] px-10 items-center text-white uppercase font-bold text-sm lg:text-xl'>
+          <NavLink to={"/professionals"} className='border border-white  tracking-wider flex flex-row gap-2 p-3 lg:px-[5rem] px-10 items-center text-white uppercase font-bold text-sm lg:text-xl'>
             The Professionals
             <BsChevronRight className="lg:text-[1.3rem]"/>
           </NavLink>

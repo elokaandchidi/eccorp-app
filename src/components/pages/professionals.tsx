@@ -49,7 +49,7 @@ const Professionals = () => {
       <div className='bg-professionals bg-black bg-opacity-60 flex flex-col items-center w-full'>
         <div className='flex flex-col lg:h-screen lg:w-9/12 w-11/12 overflow-auto mb-[4rem]'>
           <Navbar/>
-          <div className='flex flex-row lg:justify-start justify-center font-akshar gap-2 w-full lg:text-xl text-white pt-10 lg:pt-[4rem]'>
+          <div className='flex flex-row lg:justify-start justify-center gap-2 w-full lg:text-xl text-white pt-10 lg:pt-[4rem]'>
             <NavLink className='text-[#B39659]' to='/'>
               HOMEPAGE
             </NavLink>/
@@ -74,7 +74,7 @@ const Professionals = () => {
             <NavLink key={executive._id} to={`/professionals/${executive.name}`} className='flex flex-col gap-3 items-center'>
               <img src={executive.mainImageUrl} alt='logo' className='lg:w-[16rem] lg:h-[16rem] w-[12rem] h-[12rem] grayscale object-fit rounded-full' />
               <div className='text-white font-semibold tracking-wider text-2xl lg:text-[2rem]'>{executive.name}</div>
-              <div className='text-[#B39659] lg:text-[1.5rem] tracking-wide font-akshar'>{executive.role}</div>
+              <div className='text-[#B39659] lg:text-[1.5rem] tracking-wide'>{executive.role}</div>
             </NavLink>
           ))}
         </div>
@@ -94,7 +94,7 @@ const Professionals = () => {
             <NavLink key={leader._id} to={`/professionals/${leader.name}`} className='flex flex-col gap-3 items-center'>
               <img src={leader.mainImageUrl} alt='logo' className='lg:w-[16rem] lg:h-[16rem] w-[12rem] h-[12rem] grayscale object-fit rounded-full' />
               <div className='text-white font-semibold tracking-wider text-2xl lg:text-[2rem]'>{leader.name}</div>
-              <div className='text-[#B39659] lg:text-[1.5rem] tracking-wide font-akshar'>{leader.role}</div>
+              <div className='text-[#B39659] lg:text-[1.5rem] tracking-wide'>{leader.role}</div>
             </NavLink>
           ))}
         </div>

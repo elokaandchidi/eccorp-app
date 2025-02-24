@@ -27,17 +27,7 @@ const Footer = () => {
             <NavLink className='' to='/'>
               <img src={logo} alt='logo' className='lg:h-20 h-12'/>
             </NavLink>
-            <div className={`max-md:flex-row max-md:items-center lg:flex-col font-akshar flex gap-2`}>
-              <div className='lg:text-lg lg:text-start text-center text-white'>
-                <span className='underline'><a target='_blank' rel="noreferrer" href='https://www.eccorp.co/' className='cursor-pointer'>A subsidiary of <span className='text-[#B39659]'>EC CORP</span>.</a></span>
-              </div>
-            </div>
-            <div className={`max-md:flex-row max-md:items-center lg:flex-col flex gap-2`}>
-              <div className='flex flex-row gap-3 lg:text-lg items-center text-white'>
-                <AiOutlineMail />
-                <div className='underline'>info@eccorp.ltd</div>
-              </div>
-            </div>
+            
           </div>
 
           <div className={`max-md:hidden flex-col flex justify-between gap-2 w-1/2`}>
@@ -78,7 +68,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className='text-white lg:text-[1.4rem] lg:mt-10 mt-3'>Designed and Developed by <span className='text-[#B39659] font-akshar'>ECCORP LTD</span></div>
+        <div className='text-white lg:text-[1.4rem] lg:mt-10 mt-3'>Designed by  <span className='text-[#B39659]'>EC Corp</span></div>
       </div>
 
     </div>
