@@ -86,7 +86,7 @@ const Contact = () => {
       <div className='bg-contact bg-black bg-opacity-60 flex flex-col items-center w-full'>
         <div className='h-full lg:w-9/12 w-11/12'>
           <Navbar/>
-          <div className='flex flex-row font-akshar lg:justify-start justify-center  gap-2 w-full lg:text-lg text-sm text-white pt-10 lg:pt-[4rem] lg:mb-[25rem]'>
+          <div className='flex flex-row  lg:justify-start justify-center  gap-2 w-full lg:text-lg text-sm text-white pt-10 lg:pt-[4rem] lg:mb-[25rem]'>
             <NavLink className='text-[#B39659]' to='/'>
               HOMEPAGE
             </NavLink>/
@@ -100,9 +100,9 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className={`sm:flex-col lg:flex-row lg:items-start flex lg:w-9/12 w-11/12 lg:mt-[-25rem] mt-[-10rem]`}>
+      <div className={`flex-col lg:flex-row lg:items-start flex lg:w-9/12 w-11/12 lg:mt-[-25rem] mt-[-10rem]`}>
         <div className={`flex flex-col lg:w-1/4 gap-3 items-start pt-1 w-3/4`}>
-          <div className='text-white lg:text-[1.7rem] font-akshar w-1/2 text-lg font-medium  tracking-wide'>
+          <div className='text-white lg:text-[1.7rem] w-1/2 text-lg font-medium  tracking-wide'>
             ENQUIRE
             <div className='border-b-2 border-[#B39659] w-4/12 pt-3'></div>
           </div>
@@ -112,7 +112,7 @@ const Contact = () => {
           <div className={`max-sm:hidden block font-semibold tracking-wider lg:text-[3rem] text-[1.4rem] capitalize text-center `}>contact us</div>
           
           <div className='flex flex-col gap-6 lg:mt-20 w-full text-white'>
-          <div className='grid lg:grid-cols-2 grid-cols-1 font-akshar gap-5 items-center'>
+          <div className='grid lg:grid-cols-2 grid-cols-1  gap-5 items-center'>
               <div className='flex flex-col'>
                 <input value={formInfo.name} onChange={({ target}) => {setFormInfo({ ...formInfo, name: target.value })}} className='bg-transparent outline-none text-white placeholder:text-white border-b-2 border-[#B39659] py-5 px-3' placeholder='Name *' type='text'/>
               </div>
@@ -120,15 +120,15 @@ const Contact = () => {
                 <input value={formInfo.email} onChange={({ target}) => {setFormInfo({ ...formInfo, email: target.value })}} className='bg-transparent outline-none text-white placeholder:text-white border-b-2 border-[#B39659] py-5 px-3' placeholder='Email *' type='email'/>
               </div>
             </div>
-            <div className='grid lg:grid-cols-2 grid-cols-1 font-akshar gap-4 items-center'>
+            <div className='grid lg:grid-cols-2 grid-cols-1  gap-4 items-center'>
               <div className='flex flex-col'>
                 <input value={formInfo.phone} onChange={({ target}) => {setFormInfo({ ...formInfo, phone: target.value })}} className='bg-transparent outline-none text-white placeholder:text-white border-b-2 border-[#B39659] py-5 px-3' placeholder='Phone *' type='text'/>
               </div>
             </div>
-            <div className='flex flex-col font-akshar'>
+            <div className='flex flex-col '>
               <textarea value={formInfo.message} onChange={({ target}) => {setFormInfo({ ...formInfo, message: target.value })}} className='bg-transparent outline-none text-white placeholder:text-white border-b-2 border-[#B39659] py-5 px-3' placeholder='Message *'/>
             </div>
-            <div className='flex flex-col font-akshar lg:items-start items-center mt-7 w-full'>
+            <div className='flex flex-col  lg:items-start items-center mt-7 w-full'>
               <div onClick={handleSubmit} className='lg:w-1/3 w-1/2 border border-white p-3 cursor-pointer text-center text-white uppercase font-semibold text-sm lg:text-xl'>{!isSubmitting ? 'SUBMIT' : 'Submitting ....'}</div>
             </div>
             <div onClick={() => setHandleDisclaimerPopUp(!handleDisclaimerPopUp)} className='flex flex-row gap-3 lg:mt-9 mt-4 lg:mb-0 mb-14 items-center cursor-pointer'>
@@ -145,7 +145,7 @@ const Contact = () => {
             <div className=' font-medium text-center text-[1.9rem]'>
               London, United Kingdom
             </div>
-            <div className='text-center font-akshar'>
+            <div className='text-center'>
               Central London
             </div>
             
@@ -155,7 +155,7 @@ const Contact = () => {
             <div className=' font-medium text-center text-[1.9rem]'>
             Lagos, Nigeria
             </div>
-            <div className='text-center font-akshar'>
+            <div className='text-center'>
               Victoria Island
             </div>
             
@@ -165,7 +165,7 @@ const Contact = () => {
             <div className=' font-medium text-center text-[1.9rem]'>
               New York, United States
             </div>
-            <div className='text-center font-akshar'>
+            <div className='text-center'>
               Manhattan
             </div>
             

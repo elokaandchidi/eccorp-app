@@ -25,7 +25,7 @@ const About = () => {
           </div>
           <div className='flex lg:flex-row flex-col lg:mt-[10rem] lg:gap-12 gap-5 justify-between items-start w-full'>
             <div className='flex flex-col lg:w-3/12 gap-3 lg:text-lg text-sm'>
-              <div className='text-white  lg:text-[3rem] text-[1.7rem] leading-snug tracking-wider text-left font-bold'>
+              <div className='text-white lg:text-[3rem] text-[1.7rem] leading-snug tracking-wider text-left font-bold'>
                 In business we are guided by these principles:
               </div>
             </div>
@@ -40,7 +40,7 @@ const About = () => {
         </div>
       </div>
       <div className='flex lg:flex-row flex-col lg:gap-12 gap-5 justify-end items-start lg:w-9/12 w-11/12'>
-        <div className='lg:w-4/5 flex flex-col lg:pl-[5rem] lg:mt-[-10rem] gap-4 text-white'>
+        <div className='lg:w-4/5 flex flex-col lg:pl-[5rem] lg:mt-[-7rem] gap-4 text-white'>
           <div className='text-xl leading-loose mt-5'>
             <b>Innovation</b> - At ECCORP, innovation is at the core of everything we do. We thrive on pushing the boundaries of conventional thinking and constantly seek out new ways to solve complex problems. Our innovation stems from a combination of cutting-edge technologies, interdisciplinary collaboration, and a relentless pursuit of excellence. We foster a culture of creativity and experimentation, empowering our team to explore novel ideas and approaches. Through continuous research and development, we stay ahead of emerging trends and anticipate the needs of our clients. By harnessing the power of innovation, we deliver transformative solutions that drive tangible results and shape the future of technology.
           </div>

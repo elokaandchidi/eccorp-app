@@ -91,7 +91,7 @@ const ProfessionalDetail = () => {
   return (
     <div className='flex flex-col items-center lg:gap-[5rem] gap-10 w-full'>
       <div className='bg-professionals bg-black bg-opacity-60 flex flex-col items-center w-full'>
-        <div className='flex flex-col h-[23rem] lg:h-screen lg:w-9/12 w-11/12 overflow-auto mb-[4rem]'>
+        <div className='flex flex-col pb-[20rem] lg:w-9/12 w-11/12 overflow-auto'>
           <Navbar/>
           <div className='flex flex-row lg:justify-start justify-center gap-2 w-full lg:text-lg text-sm text-white pt-10 lg:pt-[4rem]'>
             <NavLink className='text-[#B39659]' to='/'>
@@ -102,7 +102,7 @@ const ProfessionalDetail = () => {
           </div>
         </div>
       </div>
-      <div className={`max-md:flex-col items-center lg:flex-row lg:items-start flex lg:w-9/12 w-11/12 z-20 lg:gap-10 lg:mt-[-35rem] mt-[-20rem]`}>
+      <div className={`max-md:flex-col items-center lg:flex-row lg:items-start flex lg:w-9/12 w-11/12 z-20 lg:gap-10 mt-[-15rem]`}>
         <div className='flex flex-col 2xl:w-1/4 lg:w-2/5 gap-5 items-center w-3/4'>
           <img src={professionalDetail.mainImageUrl} alt='logo' className='lg:w-[15rem] lg:h-[15rem] grayscale w-[10rem] h-[10rem] object-fit rounded-full' />
           <div className='text-white lg:text-[2.4rem] text-lg text-center font-semibold  tracking-wide'>
@@ -162,14 +162,14 @@ const ProfessionalDetail = () => {
           UPDATES
           <div className='border-b-2 border-[#B39659] lg:w-1/3 w-2/12 pt-3'></div>
         </div>
-        <div className='grid lg:grid-cols-3 lg:gap-[4rem] w-full gap-5 lg:mt-10 mt-5'>
+        <div className='grid lg:grid-cols-3 sm:grid-cols-2 lg:gap-[4rem] w-full gap-5 lg:mt-10 mt-5'>
           {postDetailMore?.map((post) => (
             <div className='bg-[#383838] w-full' key={post._id}>
               <div className='flex flex-col gap-4 lg:p-10 p-5'>
-                <div className='text-white lg:text-[1.5rem] text-lg mb-3 font-bold line-clamp-2'>
+                <div className='text-white lg:text-[1.5rem] text-lg mb-3 font-bold sm:line-clamp-1'>
                   {post?.title}
                 </div>
-                <div className='text-white lg:text-lg text-sm  leading-relaxed line-clamp-5'>
+                <div className='text-white lg:text-lg text-sm lg:h-[10rem] sm:h-[5rem]'>
                   {post?.subtitle}
                 </div>
               </div>

@@ -125,7 +125,7 @@ const Home = () => {
                 LED BY
                 <div className='border-b border-[#B39659] pt-2'></div>
               </div>
-              <div className={`flex flex-col lg:flex-row gap-3 lg:gap-7`}>
+              <div className={`flex flex-col lg:flex-row gap-7`}>
                 <div className='flex flex-row gap-3 items-center'>
                   <img src={ImageEddy} alt='logo' className='w-20 h-20 object-cover rounded-full grayscale' />
                   <div className='text-white lg:text-[1.5rem] text-[1.2rem] leading-tight tracking-wide'>Eddy Jawed, <br/> Chief Executive Officer</div>
@@ -152,14 +152,14 @@ const Home = () => {
           UPDATES
           <div className='border-b-2 border-[#B39659] lg:w-1/3 w-2/12 pt-3'></div>
         </div>
-        <div className='grid lg:grid-cols-3 w-full lg:gap-[4rem] gap-5 lg:mt-10 mt-5'>
+        <div className='grid lg:grid-cols-3 sm:grid-cols-2 lg:gap-[4rem] w-full gap-5 lg:mt-10 mt-5'>
           {newsList?.map((post) => (
             <div className='bg-[#383838] w-full' key={post._id}>
               <div className='flex flex-col gap-4 lg:p-10 p-5'>
-                <div className='text-white lg:text-[1.5rem] text-lg mb-3 font-bold line-clamp-2'>
+                <div className='text-white lg:text-[1.5rem] text-lg mb-3 font-bold sm:line-clamp-1'>
                   {post?.title}
                 </div>
-                <div className='text-white lg:text-lg text-sm  leading-relaxed line-clamp-5'>
+                <div className='text-white lg:text-lg text-sm lg:h-[10rem] sm:h-[5rem]'>
                   {post?.subtitle}
                 </div>
               </div>

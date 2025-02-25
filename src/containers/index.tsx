@@ -9,7 +9,7 @@ const IndexRoutes = () => {
   // eslint-disable-next-line
   
   return (
-    <div className={`flex flex-row w-full h-full bg-[#1e1e1e]`}>
+    <div className={`flex flex-col items-center w-full overflow-auto h-screen bg-[#1e1e1e]`}>
       <AlertProvider>
         <Alert />  
         <Routes>

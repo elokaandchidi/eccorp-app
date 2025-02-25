@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import BlockContent from '@sanity/block-content-to-react';
-import { FaInstagram, FaSquareFacebook } from "react-icons/fa6";
 
 import Footer from "../reuseables/footer";
 import Navbar from "../reuseables/navbar";
@@ -15,13 +14,13 @@ interface NewInfo{
   title: string;
   subtitle: string;
   duration: string;
-  body: Object;
+  body: any[];
   _createdAt: string;
 }
 
 
 const NewsDetail = () => {
-  const [postDetail, setPostDetail] = useState<NewInfo>({_id: "", title: "", duration: "", subtitle: "", body: "", _createdAt: ""});
+  const [postDetail, setPostDetail] = useState<NewInfo>({_id: "", title: "", duration: "", subtitle: "", body: [], _createdAt: ""});
   const [postDetailMore, setPostDetailMore] = useState<NewInfo[]>([]);
   const {id} = useParams();
 
@@ -78,7 +77,7 @@ const NewsDetail = () => {
       <div className='bg-update bg-black bg-opacity-60 flex flex-col items-center w-full'>
         <div className='h-full lg:w-9/12 w-11/12'>
           <Navbar/>
-          <div className='flex flex-row font-akshar lg:justify-start justify-center  gap-2 w-full lg:text-lg text-sm text-white pt-10 lg:pt-[4rem]'>
+          <div className='flex flex-row lg:justify-start justify-center gap-2 w-full lg:text-lg text-sm text-white pt-10 lg:pt-[4rem]'>
             <NavLink className='text-[#B39659]' to='/'>
               HOMEPAGE
             </NavLink>/
@@ -86,14 +85,14 @@ const NewsDetail = () => {
             <span className='font-extrabold tracking-wide'>{postDetail?.title}</span>
           </div>
           <div className='flex flex-col w-full items-center lg:mt-[5rem] mt-10 lg:mb-[10rem] mb-20'>
-            <div className='text-white font-akshar lg:text-lg text-sm gap-2 flex flex-row items-center'>
+            <div className='text-white  lg:text-lg text-sm gap-2 flex flex-row items-center'>
               <i className="fi fi-rr-hourglass-end mb-[-.3rem]"></i>
               {postDetail?.duration} mins read
             </div>
             <div className={`leading-relaxed tracking-widest text-white  lg:text-[3rem] text-3xl my-3 font-bold text-center`}>
               {postDetail?.title}
             </div>
-            <div className='text-white font-akshar lg:text-lg text-sm lg:w-full w-3/4 text-center'>{formatDate(postDetail?._createdAt)}</div>
+            <div className='text-white lg:text-lg text-sm lg:w-full w-3/4 text-center'>{formatDate(postDetail?._createdAt)}</div>
           </div>
         </div>
       </div>
@@ -101,13 +100,13 @@ const NewsDetail = () => {
       <div className='flex flex-col items-center lg:w-9/12 w-11/12'>
         <div className='flex flex-col gap-10 items-center w-full'>
           <div className='lg:w-2/3 lg:text-xl text-white'>
-            <BlockContent className='leading-relaxed font-akshar' blocks={postDetail?.body} serializers={serializers} />
+            <BlockContent className='leading-relaxed ' blocks={postDetail?.body} serializers={serializers} />
           </div>
         </div>
       </div>
       <div className='flex lg:flex-row flex-col gap-5 justify-between items-start lg:w-9/12 w-11/12'>
         <div className='flex flex-col w-full gap-3 lg:text-lg text-sm'>
-          <div className='text-white  lg:text-[3rem] text-[1.7rem] leading-relaxed tracking-wider text-left font-bold'>
+          <div className='text-white lg:text-[3rem] text-[1.7rem] leading-relaxed tracking-wider text-left font-bold'>
             More for You
           </div>
           <div className='grid lg:grid-cols-3 lg:gap-[4rem] gap-5 lg:mt-10 mt-5'>
@@ -117,13 +116,13 @@ const NewsDetail = () => {
                   <div className='text-white lg:text-[1.5rem] text-lg mb-3 font-bold line-clamp-2'>
                     {post?.title}
                   </div>
-                  <div className='text-white lg:text-lg text-sm font-akshar leading-relaxed line-clamp-5'>
+                  <div className='text-white lg:text-lg text-sm  leading-relaxed line-clamp-5'>
                     {post?.subtitle}
                   </div>
                 </div>
 
                 <div className='flex flex-col items-center lg:gap-3 gap-1 border-t lg:py-5 py-3'>
-                  <NavLink to={`/updates/${post?._id}`} className='font-akshar text-[#B39659] lg:text-xl font-semibold gap-2 flex flex-row items-center'>
+                  <NavLink to={`/updates/${post?._id}`} className=' text-[#B39659] lg:text-xl font-semibold gap-2 flex flex-row items-center'>
                     READ ARTICLE
                     <i className="fi fi-rr-angle-small-right mb-[-.3rem]"></i>
                   </NavLink>

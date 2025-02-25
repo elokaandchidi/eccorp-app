@@ -47,7 +47,7 @@ const Professionals = () => {
   return (
     <div className='flex flex-col items-center lg:gap-[5rem] gap-10 w-full'>
       <div className='bg-professionals bg-black bg-opacity-60 flex flex-col items-center w-full'>
-        <div className='flex flex-col lg:h-screen lg:w-9/12 w-11/12 overflow-auto mb-[4rem]'>
+        <div className='flex flex-col lg:w-9/12 w-11/12 overflow-auto pb-[20rem]'>
           <Navbar/>
           <div className='flex flex-row lg:justify-start justify-center gap-2 w-full lg:text-xl text-white pt-10 lg:pt-[4rem]'>
             <NavLink className='text-[#B39659]' to='/'>
@@ -64,12 +64,12 @@ const Professionals = () => {
         </div>
       </div>
 
-      <div className='flex flex-col lg:items-center lg:w-9/12 w-11/12 lg:mt-[-33rem] 2xl:mt-[-42rem] mt-5'>
+      <div className='flex flex-col lg:items-center lg:w-9/12 w-11/12 lg:mt-[-16rem] mt-[-20rem]'>
         <div className='text-white font-semibold tracking-widest lg:text-[1.8rem] text-2xl'>
           EXECUTIVE TEAM
           <div className='border-b border-[#B39659] lg:w-1/4 w-1/12 pt-2'></div>
         </div>
-        <div className='flex lg:flex-row flex-col flex-wrap lg:gap-[4rem] w-full items-center justify-between gap-5 lg:mt-[6rem] mt-5'>
+        <div className='flex sm:flex-row flex-col flex-wrap sm:gap-[4rem] w-full items-center justify-between gap-5 lg:mt-[6rem] mt-5'>
           {!loading && executiveList?.map((executive) => (
             <NavLink key={executive._id} to={`/professionals/${executive.name}`} className='flex flex-col gap-3 items-center'>
               <img src={executive.mainImageUrl} alt='logo' className='lg:w-[16rem] lg:h-[16rem] w-[12rem] h-[12rem] grayscale object-fit rounded-full' />
@@ -89,7 +89,7 @@ const Professionals = () => {
           LEADERSHIP TEAM
           <div className='border-b border-[#B39659] lg:w-1/4 w-1/12 pt-2'></div>
         </div>
-        <div className='flex lg:flex-row flex-col flex-wrap lg:gap-[4rem] w-full items-center justify-between gap-5 lg:mt-[6rem] mt-5'>
+        <div className='flex sm:flex-row flex-col flex-wrap sm:gap-[4rem] w-full items-center justify-around gap-5 lg:mt-[6rem] mt-5'>
           {!loading && leaderList?.map((leader) => (
             <NavLink key={leader._id} to={`/professionals/${leader.name}`} className='flex flex-col gap-3 items-center'>
               <img src={leader.mainImageUrl} alt='logo' className='lg:w-[16rem] lg:h-[16rem] w-[12rem] h-[12rem] grayscale object-fit rounded-full' />

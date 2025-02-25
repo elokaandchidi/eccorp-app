@@ -6,7 +6,6 @@ import { NavLink, useParams } from "react-router-dom";
 import { newsDetailMoreQuery } from "../../utils/data";
 import { client } from "../../utils/client";
 
-import { AiOutlineMail } from "react-icons/ai";
 import { serviceList } from "../../utils/service";
 
 import Footer from "../reuseables/footer";
@@ -64,7 +63,7 @@ const ServiceDetail = () => {
           <div className='text-white lg:text-lg  leading-normal'>
             Email us or fill out our <br/> contact form to get started.
           </div>
-          <NavLink to={'/contact'} className='bg-[#B39659] font-akshar p-3 px-10 text-white font-semibold lg:text-xl text-sm gap-2 tracking-wider uppercase flex flex-row items-center'>
+          <NavLink to={'/contact'} className='bg-[#B39659] p-3 px-10 text-white font-semibold lg:text-xl text-sm gap-2 tracking-wider uppercase flex flex-row items-center'>
             Contact Us
           </NavLink>
         </div>
@@ -91,7 +90,7 @@ const ServiceDetail = () => {
           UPDATES
           <div className='border-b-2 border-[#B39659] lg:w-1/3 w-2/12 pt-3'></div>
         </div>
-        <div className='grid lg:grid-cols-3 w-full lg:gap-[4rem] gap-5 lg:mt-10 mt-5'>
+        <div className='grid lg:grid-cols-3 sm:grid-cols-2 lg:gap-[4rem] w-full gap-5 lg:mt-10 mt-5'>
           {newsList?.map((post) => (
             <div className='bg-[#383838] w-full' key={post._id}>
               <div className='flex flex-col gap-4 lg:p-10 p-5'>

@@ -6,9 +6,9 @@ const Alert: React.FC = () => {
   const { alerts, clearAlert } = useAlert();
 
   return (
-    <div className="absolute flex z-50 justify-end w-screen">
+    <div className="absolute flex flex-col gap-3 z-50 top-[3rem] right-5 items-end w-screen">
       {alerts.map((alert, index) => (
-        <div key={index} className={`mt-3 mx-4 px-4 rounded-md border-l-4 ${alert.type === 'success' ? ' border-green-500 bg-green-100' :' border-red-500 bg-red-100'} md:max-w-2xl md:px-8 text-[12px]`}>
+        <div key={index} className={`px-4 rounded-md border-l-[.6rem] ${alert.type === 'success' ? ' border-green-500 bg-green-100' :' border-red-500 bg-red-100'} max-w-2xl md:px-8 text-[12px] md:w-[20rem]`}>
             <div className="flex justify-between py-3">
                 <div className="flex">
                     <div>

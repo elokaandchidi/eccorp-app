@@ -2,7 +2,6 @@ import { NavLink } from 'react-router-dom';
 import { useState } from "react";
 import logo from '../../assets/images/logo.png';
 import { BsChevronRight } from 'react-icons/bs';
-import { AiOutlineMail } from "react-icons/ai";
 
 import { FaAsterisk } from 'react-icons/fa6';
 import Disclaimer from './disclaimer';
@@ -62,7 +61,7 @@ const Footer = () => {
                 <div className=''>Read disclaimer</div>
               </div>
               <NavLink to='/contact' className='flex flex-row gap-3 justify-end items-center'>
-                <div className='font-semibold text-[#B39659] font-akshar text-[1.3rem]'>VISIT OUR CONTACT PAGE</div>
+                <div className='font-semibold text-[#B39659] text-[1.3rem]'>VISIT OUR CONTACT PAGE</div>
                 <BsChevronRight className='text-white'/>
               </NavLink>
             </div>

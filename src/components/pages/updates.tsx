@@ -22,6 +22,7 @@ const News = () => {
   const [searchParams, setSearchParams] = useState({ page: 1, pageSize: 10, searchTerm: ''});
   
   const fetchNewsBySearch = () =>{
+    setLoading(true);
     const query = newSearchQuery(searchParams);
     
     client.fetch(query)
@@ -31,6 +32,7 @@ const News = () => {
     })
   }
   const fetchNews = () =>{
+    setLoading(true);
     client.fetch(newsQuery(searchParams))
     .then((data) => {
       setNewList(data);
@@ -39,7 +41,6 @@ const News = () => {
   }
   
   useEffect(() => {
-    setLoading(true);
     
     if(searchParams.searchTerm !== ''){
       fetchNewsBySearch();
@@ -72,7 +73,7 @@ const News = () => {
       <div className='bg-update bg-black bg-opacity-60 flex flex-col items-center w-full'>
         <div className='h-full lg:w-9/12 w-11/12'>
           <Navbar/>
-          <div className='flex flex-row font-akshar lg:justify-start justify-center gap-2 w-full lg:text-xl text-white pt-10 lg:pt-[4rem]'>
+          <div className='flex flex-row  lg:justify-start justify-center gap-2 w-full lg:text-xl text-white pt-10 lg:pt-[4rem]'>
             <NavLink className='text-[#B39659]' to='/'>
               HOMEPAGE
             </NavLink>/
@@ -92,20 +93,20 @@ const News = () => {
       </div>
 
       <div className='flex flex-col items-center lg:w-9/12 w-11/12'>
-        <div className='grid lg:grid-cols-3 w-full lg:gap-[4rem] gap-5 lg:mt-10 mt-5'>
+        <div className='grid lg:grid-cols-3 sm:grid-cols-2 lg:gap-[4rem] w-full gap-5 lg:mt-10 mt-5'>
           {!loading && newsList?.map((post) => (
             <div className='bg-[#383838] w-full' key={post._id}>
               <div className='flex flex-col gap-4 lg:p-10 p-5'>
-                <div className='text-white lg:text-[1.5rem] text-lg mb-3 font-bold line-clamp-2'>
+                <div className='text-white lg:text-[1.5rem] text-lg mb-3 font-bold sm:line-clamp-1'>
                   {post?.title}
                 </div>
-                <div className='text-white lg:text-lg text-sm font-akshar leading-relaxed line-clamp-5'>
+                <div className='text-white lg:text-lg text-sm lg:h-[10rem] sm:h-[5rem]'>
                   {post?.subtitle}
                 </div>
               </div>
 
               <div className='flex flex-col items-center lg:gap-3 gap-1 border-t lg:py-5 py-3'>
-                <NavLink to={`/updates/${post?._id}`} className='font-akshar text-[#B39659] lg:text-xl font-semibold gap-2 flex flex-row items-center'>
+                <NavLink to={`/updates/${post?._id}`} className=' text-[#B39659] lg:text-xl font-semibold gap-2 flex flex-row items-center'>
                   READ ARTICLE
                   <i className="fi fi-rr-angle-small-right mb-[-.3rem]"></i>
                 </NavLink>
@@ -117,16 +118,18 @@ const News = () => {
             </div>
           ))}
         </div>
-        <div className={`${newsList.length !== 0 ? 'hidden' : ''} w-full flex flex-col gap-3 items-center justify-center text-white my-[5rem]`}>
-          <div className='text-2xl  font-semibold mb-3'>No results found</div>
-          <div className=''>Uh oh! It seems like we couldn't find any articles matching your search criteria at the moment. </div>
-          <div className=''>Don't worry, our team is constantly updating our blog with fresh content. </div>
-          <div className=''>Why not try a different search term or explore our blog categories to discover something new? Happy exploring!</div>
-          <div onClick={() => {setSearchParams({ ...searchParams, searchTerm: '' })}} className='text-white border py-3 px-10 lg:text-xl font-semibold cursor-pointer gap-2 mt-5 uppercase flex flex-row items-center'>
-            <i className="fi fi-rr-angle-small-left mb-[-.3rem]"></i>
-            Back to blog
+        {!loading && newsList.length == 0 &&
+          <div className={`w-full flex flex-col gap-3 items-center justify-center text-white my-[5rem]`}>
+            <div className='text-2xl  font-semibold mb-3'>No results found</div>
+            <div className=''>Uh oh! It seems like we couldn't find any articles matching your search criteria at the moment. </div>
+            <div className=''>Don't worry, our team is constantly updating our blog with fresh content. </div>
+            <div className=''>Why not try a different search term or explore our blog categories to discover something new? Happy exploring!</div>
+            <div onClick={() => {setSearchParams({ ...searchParams, searchTerm: '' })}} className='text-white border py-3 px-10 lg:text-xl font-semibold cursor-pointer gap-2 mt-5 uppercase flex flex-row items-center'>
+              <i className="fi fi-rr-angle-small-left mb-[-.3rem]"></i>
+              Back to blog
+            </div>
           </div>
-        </div>
+        }
       </div>
 
 
