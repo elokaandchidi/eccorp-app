@@ -100,7 +100,7 @@ const News = () => {
                 <div className='text-white lg:text-[1.5rem] text-lg mb-3 font-bold sm:line-clamp-1'>
                   {post?.title}
                 </div>
-                <div className='text-white lg:text-lg text-sm lg:h-[10rem] sm:h-[5rem]'>
+                <div className='text-white lg:text-lg text-sm sm:h-[7rem] line-clamp-4'>
                   {post?.subtitle}
                 </div>
               </div>

@@ -12,7 +12,7 @@ const Navbar = () => {
     <div className='flex flex-col w-full relative'>
       <div className='flex flex-row justify-between items-center w-full lg:py-5 py-3'>
         <NavLink  to='/'>
-          <img src={logo} alt='logo' className='h-10'/>
+          <img src={logo} alt='logo' className='lg:h-20 h-12'/>
         </NavLink>
         <div className="hidden lg:block">
           <div className={`flex flex-col text-lg text-white justify-end`}>
@@ -49,7 +49,7 @@ const Navbar = () => {
           <div className='flex flex-col w-full relative bg-[#110f16]'>
             <div className='flex flex-row items-center justify-between w-full py-3 px-5 border-b border-gray-200'>
               <NavLink to='/'>
-                <img src={logo} alt='logo' className='h-10'/>
+                <img src={logo} alt='logo' className='h-12'/>
               </NavLink>
               <i onClick={() => SetShowMenu(false)} className='fi fi-rr-cross text-white cursor-pointer'></i>
             </div>
