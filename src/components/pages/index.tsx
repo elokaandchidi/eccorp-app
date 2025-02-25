@@ -13,7 +13,6 @@ import bgImg from '../../assets/images/bg_img_home2.svg';
 import ImageEamon from '../../assets/images/eamon.jpg';
 import ImageChidi from '../../assets/images/chidi.png';
 import ImageEddy from '../../assets/images/eddy.jpg';
-import { AiOutlineMail } from "react-icons/ai";
 import { FaAsterisk } from "react-icons/fa6";
 import Disclaimer from "../reuseables/disclaimer";
 import { useAlert } from "../../utils/notification/alertcontext";

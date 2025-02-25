@@ -118,7 +118,7 @@ const News = () => {
             </div>
           ))}
         </div>
-        {!loading && newsList.length == 0 &&
+        {!loading && newsList.length === 0 &&
           <div className={`w-full flex flex-col gap-3 items-center justify-center text-white my-[5rem]`}>
             <div className='text-2xl  font-semibold mb-3'>No results found</div>
             <div className=''>Uh oh! It seems like we couldn't find any articles matching your search criteria at the moment. </div>
