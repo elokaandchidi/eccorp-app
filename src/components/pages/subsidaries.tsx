@@ -55,11 +55,11 @@ const Subsidaries = () => {
                 <img src={EctcLogo} className='h-20' alt='EctcLogo'/>
               </div>
               <div className='text-white lg:text-xl text-sm leading-relaxed'>
-                ECCORP LTD provides expert advice and solutions to businesses seeking to leverage technology for strategic advantage. With a team of experienced technology consultants, we offer a wide range of services, including app, software and website development, IT strategy, digital transformation, cybersecurity, cloud computing and data analytics. Our company's track record of successful projects and satisfied clients speaks to the quality and effectiveness of our services.
+                EC Corp provides expert advice and solutions to businesses seeking to leverage technology for strategic advantage. With a team of experienced technology consultants, we offer a wide range of services, including app, software and website development, IT strategy, digital transformation, cybersecurity, cloud computing and data analytics. Our company's track record of successful projects and satisfied clients speaks to the quality and effectiveness of our services.
               </div>
               <a href="http://eccorp.ltd" target="_blank" rel="noreferrer" className='flex flex-row justify-end items-center right-10 lg:absolute bottom-10 gap-8 mt-10'>
                 <div className='bg-[#B39659] p-4 px-10 text-white font-semibold lg:text-xl text-sm gap-2 tracking-wide uppercase flex flex-row items-center'>
-                  Go to ECCORP
+                  Go to EC Corp
                   <i className="fi fi-rr-angle-small-right mb-[-.3rem]"></i>
                 </div>
               </a>

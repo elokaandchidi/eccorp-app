@@ -70,18 +70,17 @@ const ServiceDetail = () => {
         
         <div className='flex flex-col lg:w-4/5 justify-between gap-5 lg:mt-0 mt-5 text-white'>
           <div className='font-semibold lg:text-[3rem] text-[2rem] lg:text-start capitalize text-center tracking-widest'>{serviceInfo?.title}</div>
-          
+          {serviceInfo?.title === 'Data Analytics & Management' && 
+            <span className='flex w-full lg:justify-start justify-center'>
+              <a href="http://ectc.ltd" target="_blank" rel="noreferrer"  className='bg-[#B39659] p-3 px-10 text-white font-semibold lg:text-xl text-sm gap-2 tracking-wider uppercase flex flex-row items-center cursor-pointer'>Click here to contact the data team.</a>
+            </span>
+          }
           <div className='w-full leading-relaxed lg:text-[1.3rem] text-[1.2rem] mt-12'>
             {serviceInfo?.subtitle}
           </div>
           <div className='w-full leading-relaxed lg:text-[1.3rem] text-[1.2rem]'>
             {serviceInfo?.body ? parse(serviceInfo?.body) : '---'}
           </div>
-          {serviceInfo?.title === 'Data Analytics & Management' && 
-            <span className='flex w-full'>
-              <NavLink to="/contact"  className='bg-[#B39659] p-3 px-10 text-white font-semibold lg:text-xl text-sm gap-2 tracking-wider uppercase flex flex-row items-center cursor-pointer'>Click here to contact the data team.</NavLink>
-            </span>
-          }
         </div>
       </div>
 

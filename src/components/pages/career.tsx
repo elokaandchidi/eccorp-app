@@ -30,7 +30,7 @@ const Career = () => {
               </div>
             </div>
             <div className='lg:w-3/5 flex flex-col  lg:mt-0 mt-20 gap-4 text-lg text-white'>
-              <div className='leading-relaxed'>ECCORP LTD is committed to providing and delivering the highest quality of technology consulting service to its clients, which means hiring elite consultants capable of delivering extraordinary results. We seek individuals who are committed to maintaining our record of excellence and upholding our impeccable reputation. Although we infrequently hire new consultants and we are extremely selective in our hiring decisions, we are always looking for the next great contributor to the team</div>
+              <div className='leading-relaxed'>EC Corp is committed to providing and delivering the highest quality of technology consulting service to its clients, which means hiring elite consultants capable of delivering extraordinary results. We seek individuals who are committed to maintaining our record of excellence and upholding our impeccable reputation. Although we infrequently hire new consultants and we are extremely selective in our hiring decisions, we are always looking for the next great contributor to the team</div>
               <div className='text-white w-1/2 lg:text-lg text-sm font-semibold  tracking-wide'>
                 HOW TO APPLY
                 <div className='border-b-2 border-[#B39659] lg:w-2/12 w-3/12 pt-3'></div>

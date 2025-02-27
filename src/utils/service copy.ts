@@ -2,7 +2,7 @@ export const serviceList = [
     {
         id: 1,
         title: 'analytics and data management',
-        subtitle:`In the era of big data, harnessing the potential of your data is essential for making informed decisions, gaining valuable insights, and driving business growth. At ECCORP, we offer a suite of data management and analytics services designed to help you unlock the full potential of your data assets. Here's what sets us apart:`,
+        subtitle:`In the era of big data, harnessing the potential of your data is essential for making informed decisions, gaining valuable insights, and driving business growth. At EC Corp, we offer a suite of data management and analytics services designed to help you unlock the full potential of your data assets. Here's what sets us apart:`,
         body: `<div className='flex flex-col w-full gap-5'>
             <div className='flex flex-col gap-3 w-full'>
             <p><b>Customized Data Solutions:</b></p>
@@ -48,7 +48,7 @@ export const serviceList = [
     {
         id: 2,
         title: 'website development',
-        subtitle:`At ECCORP, we recognize the pivotal role that websites play in shaping brand identity, engaging customers, and driving business growth. Our website development services are meticulously crafted to meet the diverse needs of businesses across industries. Here's what sets us apart`,
+        subtitle:`At EC Corp, we recognize the pivotal role that websites play in shaping brand identity, engaging customers, and driving business growth. Our website development services are meticulously crafted to meet the diverse needs of businesses across industries. Here's what sets us apart`,
         body: `<div className='flex flex-col w-full gap-5'>
             <p><b>Customized Solutions:</b> We understand that every business is unique. That's why we offer tailored website development solutions that align with your specific goals, audience, and industry requirements.</p>
             <p><b>Responsive Design:</b> In today's mobile-first world, having a responsive website is crucial. Our expert designers ensure that your website looks and performs flawlessly across all devices, from smartphones to desktop computers.</p>
@@ -62,7 +62,7 @@ export const serviceList = [
     {
         id: 3,
         title: 'app development',
-        subtitle:`In the fast-paced world of mobile technology, having a compelling and user-friendly app is essential for businesses looking to stay ahead of the curve. At ECCORP, we offer a comprehensive range of app development services designed to bring your vision to life and deliver unparalleled value to your users. Here's what sets us apart:`,
+        subtitle:`In the fast-paced world of mobile technology, having a compelling and user-friendly app is essential for businesses looking to stay ahead of the curve. At EC Corp, we offer a comprehensive range of app development services designed to bring your vision to life and deliver unparalleled value to your users. Here's what sets us apart:`,
         body: `<div className='flex flex-col w-full gap-5'>
             <p><b>Customized Solutions:</b> We understand that every app idea is unique. Our team works closely with you to understand your goals, target audience, and requirements, ensuring that we deliver a tailor-made solution that meets your specific needs.</p>
             <p><b>Platform Flexibility:</b> Whether you're targeting iOS, Android, or both platforms, we have the expertise to develop high-quality apps that run seamlessly on any device. From smartphones to tablets, we ensure that your app provides a consistent and engaging user experience across all platforms.</p>
@@ -165,7 +165,7 @@ export const serviceList = [
     {
         id: 6,
         title: 'technology assurance',
-        subtitle:`In today's fast-paced digital landscape, ensuring the reliability, security, and performance of your technology systems is paramount for business success. At ECCORP, we offer a comprehensive suite of technology assurance services designed to mitigate risks, optimize performance, and maximize the value of your technology investments. Here's how we can help:`,
+        subtitle:`In today's fast-paced digital landscape, ensuring the reliability, security, and performance of your technology systems is paramount for business success. At EC Corp, we offer a comprehensive suite of technology assurance services designed to mitigate risks, optimize performance, and maximize the value of your technology investments. Here's how we can help:`,
         body: `<div className='flex flex-col w-full gap-5'>
             <div className='flex flex-col gap-3 w-full'>
             <p><b>Comprehensive Audits:</b></p>
@@ -213,7 +213,7 @@ export const serviceList = [
     {
         id: 7,
         title: 'artificial intelligence',
-        subtitle:`Artificial Intelligence (AI) has revolutionized industries, offering unprecedented opportunities for automation, insight generation, and predictive capabilities. At ECCORP, we offer a comprehensive suite of AI services designed to harness the power of AI and drive business transformation. Here's how we can help:`,
+        subtitle:`Artificial Intelligence (AI) has revolutionized industries, offering unprecedented opportunities for automation, insight generation, and predictive capabilities. At EC Corp, we offer a comprehensive suite of AI services designed to harness the power of AI and drive business transformation. Here's how we can help:`,
         body: `<div className='flex flex-col w-full gap-5'>
             <div className='flex flex-col gap-3 w-full'>
             <p><b>AI Strategy and Consulting:</b></p>

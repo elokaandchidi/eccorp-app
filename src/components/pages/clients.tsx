@@ -78,7 +78,7 @@ const Clients = () => {
           <div className='bg-[#383838] p-5 text-white flex flex-col gap-4 items-center'>
             <LiaQuoteLeftSolid className='text-[#B39659] text-[2rem]'/>
             <div className='text-center text-lg '>
-              We have seen our organizational profitability increase significantly thanks in large part to ECCORP’s digital transformation and data analytics
+              We have seen our organizational profitability increase significantly thanks in large part to EC Corp’s digital transformation and data analytics
             </div>
             <LiaQuoteRightSolid className='text-[#B39659] text-[2rem]'/>
 
@@ -88,7 +88,7 @@ const Clients = () => {
           <div className='bg-[#383838] p-5 text-white flex flex-col gap-4 items-center'>
             <LiaQuoteLeftSolid className='text-[#B39659] text-[2rem]'/>
             <div className='text-center text-lg '>
-              ECCORP’s expertise in designing and building a website is unmatched
+              EC Corp’s expertise in designing and building a website is unmatched
             </div>
             <LiaQuoteRightSolid className='text-[#B39659] text-[2rem]'/>
 
@@ -98,7 +98,7 @@ const Clients = () => {
           <div className='bg-[#383838] p-5 text-white flex flex-col gap-4 items-center'>
             <LiaQuoteLeftSolid className='text-[#B39659] text-[2rem]'/>
             <div className='text-center text-lg '>
-              I have no hesitation in recommending ECCORP for technology proficiency and capability
+              I have no hesitation in recommending EC Corp for technology proficiency and capability
             </div>
             <LiaQuoteRightSolid className='text-[#B39659] text-[2rem]'/>
 

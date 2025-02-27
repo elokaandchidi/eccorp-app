@@ -17,7 +17,7 @@ const Disclaimer = ( {handleToggleModal}: ChildProps) =>{
             <GoX onClick={() => handleToggleModal(false)} className='cursor-pointer text-white text-[1.3rem]'/>
         </div>
         <div className='text-white text-lg leading-relaxed'>
-          Please note that any communication with ECCORP LTD via e-mail through this website does not constitute or create a client relationship with ECCORP LTD. Please do not send any confidential information using this website.   When you receive an engagement letter from ECCORP LTD you will be our client, and you may then exchange information freely with your designated member of staff or team.
+          Please note that any communication with EC Corp via e-mail through this website does not constitute or create a client relationship with EC Corp. Please do not send any confidential information using this website.   When you receive an engagement letter from EC Corp you will be our client, and you may then exchange information freely with your designated member of staff or team.
         </div>
         <div onClick={() => handleToggleModal(false)} className='flex flex-row capitalize gap-3 text-white items-center'>
             <GoX className='cursor-pointer text-[#B39659] text-[1.3rem]'/>
