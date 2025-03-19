@@ -11,7 +11,7 @@ const App = () => {
   }, [pathname]);
   
   return (
-    <div className="App ">
+    <div className="flex flex-col items-center w-full overflow-auto h-screen">
       <Routes>
         <Route path="/*" element={<IndexRoutes/>} />
       </Routes>
