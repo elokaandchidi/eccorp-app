@@ -71,7 +71,7 @@ const Professionals = () => {
         </div>
         <div className='flex sm:flex-row flex-col flex-wrap sm:gap-[4rem] w-full items-center justify-between gap-5 lg:mt-[6rem] mt-5'>
           {!loading && executiveList?.map((executive) => (
-            <NavLink key={executive._id} to={`/professionals/${executive.name}`} className='flex flex-col gap-3 items-center'>
+            <NavLink key={executive._id} to={`/professionals/${executive.name}`} state={{ id: executive._id }}  className='flex flex-col gap-3 items-center'>
               <img src={executive.mainImageUrl} alt='logo' className='lg:w-[16rem] lg:h-[16rem] w-[12rem] h-[12rem] grayscale object-fit rounded-full' />
               <div className='text-white font-semibold tracking-wider text-2xl lg:text-[2rem]'>{executive.name}</div>
               <div className='text-[#B39659] lg:text-[1.5rem] tracking-wide'>{executive.role}</div>

@@ -6,7 +6,7 @@ type searchParams = {
 }
 
 export const professionalDetailQuery = (professionalId: string) => {
-  const query = `*[_type == "professional" && name == '${professionalId}']{
+  const query = `*[_type == "professional" && _id == '${professionalId}']{
     _id,
     name,
     title,
@@ -48,7 +48,7 @@ export const postDetailQuery = (postId: string) => {
   return query;
 };
 
-export const newsDetailMoreQuery = (id: string) => {
+export const newsDetailMoreQuery = (id?: string) => {
   if (id) {
     const query = `*[_type == "post" && _id != '${id}' && status == 'active' ]| order(_createdAt desc) [0...3]{
       _id,

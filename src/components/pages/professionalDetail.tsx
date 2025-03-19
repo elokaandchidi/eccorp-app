@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { NavLink, useParams } from "react-router-dom";
+import { NavLink, useLocation, useParams } from "react-router-dom";
 import BlockContent from '@sanity/block-content-to-react';
 import { FaMinus, FaPlus } from "react-icons/fa6";
 
@@ -33,11 +33,13 @@ interface NewInfo{
 
 
 const ProfessionalDetail = () => {
+  const location = useLocation();
   const [showEducationAccordion, setShowEducationAccordion] = useState(false)
   // const [showExperienceAccordion, setShowExperienceAccordion] = useState(false)
   const [professionalDetail, setProfessionalDetail] = useState<professionalInfo>({_id: "", name: "", title: "", body: "", mainImageUrl: "", role: "", education:[], experience:[]});
   const [postDetailMore, setPostDetailMore] = useState<NewInfo[]>([]);
-  const {id} = useParams();
+  const executiveId = location.state?.id; // Retrieve the hidden _id
+
 
   const formatImage = (value: string) =>{    
     return value?.replace(/image-/g, "").replace(/-png/g, ".png").replace(/-svg/g, ".svg");
@@ -69,15 +71,15 @@ const ProfessionalDetail = () => {
   }
 
   useEffect(() => {    
-    if(id){
-      const getProfessionalDetailquery = professionalDetailQuery(id);
+    if(executiveId){
+      const getProfessionalDetailquery = professionalDetailQuery(executiveId);
     
       client.fetch(getProfessionalDetailquery)
       .then((data) => {
         setProfessionalDetail(data[0]);
       })
 
-      const getMorePostquery = newsDetailMoreQuery(id);
+      const getMorePostquery = newsDetailMoreQuery();
     
       client.fetch(getMorePostquery)
       .then((data) => {
@@ -85,7 +87,7 @@ const ProfessionalDetail = () => {
       })
     }
     
-  }, [id])
+  }, [executiveId])
   
 
   return (
