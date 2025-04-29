@@ -106,7 +106,7 @@ const ProfessionalDetail = () => {
       </div>
       <div className={`max-md:flex-col items-center lg:flex-row lg:items-start flex lg:w-9/12 w-11/12 z-20 lg:gap-10 mt-[-15rem]`}>
         <div className='flex flex-col 2xl:w-1/4 lg:w-2/5 gap-5 items-center w-3/4'>
-          <img src={professionalDetail.mainImageUrl} alt='logo' className='lg:w-[15rem] lg:h-[15rem] grayscale w-[10rem] h-[10rem] object-fit rounded-full' />
+          <img src={professionalDetail.mainImageUrl} alt='logo' className='aspect-square lg:w-[15rem] w-[12rem] grayscale object-cover rounded-full' />
           <div className='text-white lg:text-[2.4rem] text-lg text-center font-semibold  tracking-wide'>
             {professionalDetail.name}
           </div>
